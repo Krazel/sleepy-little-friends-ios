@@ -711,7 +711,7 @@ h1 em {
   border-radius: 28px !important;
   padding: 28px !important;
   max-width: min(440px, calc(100vw - 24px)) !important;
-  max-height: calc(100dvh - 32px);
+  max-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px);
   overflow-y: auto;
   background: #fffaf0;
   box-shadow: 0 20px 80px #503e4433;

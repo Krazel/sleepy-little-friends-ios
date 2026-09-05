@@ -23,7 +23,11 @@ final class BedtimeUITests: XCTestCase {
         app.buttons["Cerrar opciones"].tap()
         let language = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Idioma")).firstMatch
         XCTAssertTrue(language.waitForExistence(timeout: 10), app.debugDescription)
-        language.tap()
+        // UIKit can finish the WebKit dialog dismissal after its AX nodes disappear.
+        Thread.sleep(forTimeInterval: 1)
+        language.coordinate(withNormalizedOffset: CGVector(dx: 0.25, dy: 0.5)).press(forDuration: 0.2)
+        let picker = XCTAttachment(screenshot: app.screenshot())
+        picker.name = "language-picker"; picker.lifetime = .keepAlways; add(picker)
         let wheel = app.pickerWheels.firstMatch
         if wheel.waitForExistence(timeout: 3) {
             wheel.adjust(toPickerWheelValue: "EN")
