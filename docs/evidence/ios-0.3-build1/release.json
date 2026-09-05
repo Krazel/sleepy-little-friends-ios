@@ -1,0 +1,20 @@
+{
+  "app": "SleepyLittleFriends",
+  "purpose": "TestFlight",
+  "version": "0.3",
+  "build": "1",
+  "bundleId": "com.krazel.animalitosadormir",
+  "appId": "6809010193",
+  "commit": "1a3d6ce1d457c27817e4785aac269bfacb2c7a33",
+  "run": "33985594899",
+  "sha256": "e6a36a2e8beeef8af72fb6fbae89ea188e1330f2ec8f8f9f189122f9644cc38b",
+  "bytes": 16961881,
+  "signatureVerified": true,
+  "uploadAccepted": true,
+  "appleBuildId": "8de1184d-6b2e-48ff-969e-55d84f378eb0",
+  "processingState": "VALID",
+  "internalBuildState": "IN_BETA_TESTING",
+  "internalTesterCount": 1,
+  "externalTesting": false,
+  "publicAppStore": false
+}

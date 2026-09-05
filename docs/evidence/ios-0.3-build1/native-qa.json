@@ -1,0 +1,10 @@
+{
+  "commit": "1a3d6ce1d457c27817e4785aac269bfacb2c7a33",
+  "run": "33985594899",
+  "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5",
+  "phone": "iPhone 17e",
+  "ipad": "iPad Pro 13-inch (M5)",
+  "iphoneInteractionTest": "passed",
+  "ipadValidation": "launch screenshot",
+  "physicalDeviceTested": false
+}
