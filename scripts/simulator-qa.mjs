@@ -81,10 +81,42 @@ if (fs.existsSync(result)) {
     { stdio: 'inherit' },
   );
 }
+const app = path.join(derived, 'Build/Products/Debug-iphonesimulator/App.app');
+const bundleFiles = fs.existsSync(app)
+  ? fs
+      .readdirSync(app, { recursive: true })
+      .filter((x) => /index.html|capacitor.config|PrivacyInfo/.test(x))
+  : [];
+fs.writeFileSync(
+  'artifacts/bundle-files.json',
+  JSON.stringify(bundleFiles, null, 2),
+);
+const systemLog = spawnSync(
+  'xcrun',
+  [
+    'simctl',
+    'spawn',
+    phone.udid,
+    'log',
+    'show',
+    '--last',
+    '15m',
+    '--style',
+    'compact',
+    '--predicate',
+    'process == "App"',
+  ],
+  { encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 },
+);
+fs.writeFileSync(
+  'artifacts/app-runtime.log',
+  systemLog.stdout || systemLog.stderr || 'No runtime log',
+);
+if (!fs.existsSync(path.join(app, 'public/index.html')))
+  throw new Error('Built app entry is missing');
 if (failure) throw failure;
 run('xcrun', ['simctl', 'boot', ipad.udid]);
 run('xcrun', ['simctl', 'bootstatus', ipad.udid, '-b']);
-const app = path.join(derived, 'Build/Products/Debug-iphonesimulator/App.app');
 run('xcrun', ['simctl', 'install', ipad.udid, app]);
 run('xcrun', [
   'simctl',
@@ -122,4 +154,3 @@ fs.writeFileSync(
   ),
 );
 console.log('Native interaction test passed; iPhone and iPad evidence saved');
-
