@@ -1684,3 +1684,13 @@ h1 em {
     min-height: 68px;
   }
 }
+.voice-credit {
+  font-size: 12px;
+  color: #816e60;
+  line-height: 1.5;
+  margin: 0;
+}
+.voice-credit a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

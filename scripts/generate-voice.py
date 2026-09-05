@@ -9,7 +9,7 @@ VOICES={"es":"es-ES-ElviraNeural","en":"en-US-JennyNeural"}
 async def main():
     semaphore=asyncio.Semaphore(3)
     async def generate(key,lang,text):
-        target=ROOT/"public"/"voice"/lang/(key+".mp3")
+        target=ROOT/"work"/"microsoft-voice"/lang/(key+".mp3")
         target.parent.mkdir(parents=True, exist_ok=True)
         if target.exists() and target.stat().st_size>1000:
             return
@@ -27,7 +27,7 @@ async def main():
                     await asyncio.sleep(2*(attempt+1))
     await asyncio.gather(*(generate(key,lang,words[lang]) for key,words in LINES.items() for lang in VOICES))
     manifest={"voices":VOICES,"rate":"-8%","provider":"Microsoft Edge neural text-to-speech, generated via edge-tts 7.2.8","clips":len(LINES)*2,"lines":LINES}
-    (ROOT/"docs"/"voice-manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
+    (ROOT/"work"/"microsoft-voice"/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
     print("COMPLETE",len(LINES)*2,flush=True)
 asyncio.run(main())
 

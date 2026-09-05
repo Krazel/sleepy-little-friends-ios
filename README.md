@@ -19,9 +19,9 @@ No hay anuncios, compras, cuentas de juego, cronómetros ni analítica.
 
 ## Voz y modo sin conexión
 
-68 MP3 incluidos: 34 frases por idioma. Voces es-ES-ElviraNeural y en-US-JennyNeural, generadas a partir de un guion fijo. La app reproduce los archivos localmente, atenúa la música mientras se narra y cancela la voz al cambiar de idioma, silenciar o salir. La síntesis del navegador solo sirve de alternativa si falla un archivo. No se envían datos del jugador a servicios de voz.
+68 MP3 incluidos: 34 frases por idioma. Voz Sarah de ElevenLabs, generada por API con eleven_multilingual_v2, ritmo 0,90 y un guion fijo en español e inglés. La app reproduce los archivos localmente, atenúa la música mientras se narra y cancela la voz al cambiar de idioma, silenciar o salir. La síntesis del navegador solo sirve de alternativa si falla un archivo. No se envían datos del jugador a servicios de voz.
 
-El guion y la procedencia están en docs/voice-script.json y docs/voice-manifest.json. scripts/generate-voice.py permite regenerar las frases con edge-tts; requiere instalar esa dependencia por separado. Referencia del generador: https://github.com/rany2/edge-tts
+El guion y la procedencia están en docs/voice-script.json y docs/voice-manifest.json. scripts/generate-elevenlabs-voice.py reutiliza la configuración local existente de CreadorVideosAI sin copiar la clave; por defecto solo consulta la cuota. --generate prepara archivos en work/elevenlabs-voice, sin reemplazar automáticamente las voces publicadas. Véase docs/elevenlabs.md. El generador anterior de Microsoft se conserva y escribe únicamente en work/microsoft-voice.
 
 Abrir la URL con conexión y esperar al aviso de disponibilidad sin conexión en «Para mayores». El service worker guarda habitaciones, aplicación y las dos bibliotecas de voz. Desde el menú del navegador se puede añadir a la pantalla de inicio. La primera visita a Sites privado requiere la cuenta autorizada.
 

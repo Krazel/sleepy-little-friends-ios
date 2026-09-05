@@ -229,7 +229,9 @@ export default function Home() {
   useEffect(() => {
     document.documentElement.lang = language;
     document.title =
-      language === 'es' ? 'Animalitos a dormir' : 'Sleepy little friends';
+      language === 'es'
+        ? 'Animalitos a dormir · elevenlabs.io'
+        : 'Sleepy little friends · elevenlabs.io';
   }, [language]);
   const open = (id: AnimalId) => {
     lastActionAt.current = -Infinity;
@@ -722,6 +724,13 @@ export default function Home() {
             <Volume2 size={18} />
             {t.previewVoice}
           </button>
+          <p className="voice-credit">
+            <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">
+              {language === 'es'
+                ? 'Voz de IA: Sarah · ElevenLabs (elevenlabs.io)'
+                : 'AI voice: Sarah · ElevenLabs (elevenlabs.io)'}
+            </a>
+          </p>
           <p className="privacy-note">
             {t.privacy} {storageIssue ? t.storageIssue : ''}
           </p>

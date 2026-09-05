@@ -1,11 +1,26 @@
 {
+  "provider": "ElevenLabs API",
+  "model": "eleven_multilingual_v2",
   "voices": {
-    "es": "es-ES-ElviraNeural",
-    "en": "en-US-JennyNeural"
+    "es": {
+      "id": "EXAVITQu4vr4xnSDxMaL",
+      "name": "Sarah - Mature, Reassuring, Confident"
+    },
+    "en": {
+      "id": "EXAVITQu4vr4xnSDxMaL",
+      "name": "Sarah - Mature, Reassuring, Confident"
+    }
   },
-  "rate": "-8%",
-  "provider": "Microsoft Edge neural text-to-speech, generated via edge-tts 7.2.8",
+  "voiceSettings": {
+    "stability": 0.58,
+    "similarity_boost": 0.75,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.9
+  },
+  "outputFormat": "mp3_44100_128",
   "clips": 68,
+  "characters": 2832,
   "lines": {
     "welcome": {
       "es": "Hola. Nuestros amiguitos tienen muchas ganas de jugar contigo.",
@@ -143,5 +158,619 @@
       "es": "Toca las cuatro notas para cantarle una nana.",
       "en": "Tap the four notes to play a little lullaby."
     }
-  }
+  },
+  "files": [
+    {
+      "language": "es",
+      "key": "welcome",
+      "identity": "e235a8c06c7f5ccd9fde874d8978fb40517637483121e3d69cc27d30d547da1e",
+      "sha256": "f0040fd35b08aef3e8f222466291d7512db714f4386d61bf0e971e905bc6fc81",
+      "bytes": 65663,
+      "characters": 62,
+      "reportedCharacterCost": "17"
+    },
+    {
+      "language": "en",
+      "key": "welcome",
+      "identity": "4868f621ac9c0ef93ca9839be9e25c37e221502d356d5c48fc9acc1055adf245",
+      "sha256": "582a1b7ef75aea1879ac5bb5d161218463b7527e47f08fad9c3a11f5151081e5",
+      "bytes": 48527,
+      "characters": 54,
+      "reportedCharacterCost": "15"
+    },
+    {
+      "language": "es",
+      "key": "ending",
+      "identity": "a0104a9948b8020019e6d6da8c7ff52fbea6cb834c6c514e9c8e683732cad686",
+      "sha256": "04e0cc57d790e378838b595d6cbd7f84f3338428a73774baca7828950bced14e",
+      "bytes": 69425,
+      "characters": 64,
+      "reportedCharacterCost": "18"
+    },
+    {
+      "language": "en",
+      "key": "ending",
+      "identity": "6d5ff9140f977f254a84672eea506dd424fdb8ed5f933637ebec824084780429",
+      "sha256": "58306ab7c5cab0c6a7f8038db8b1d4aec14d2492a69a443001df1bd1040b620d",
+      "bytes": 82799,
+      "characters": 86,
+      "reportedCharacterCost": "24"
+    },
+    {
+      "language": "es",
+      "key": "praise",
+      "identity": "709f67463123219de0f5acb1f469d25b824eb2346ab630787720a2cc102dc6ee",
+      "sha256": "c8b2cf7f13666709932f938a5c69c24463b5a5139eef3e6bf510f735e8454ad8",
+      "bytes": 44347,
+      "characters": 37,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "en",
+      "key": "praise",
+      "identity": "7da7ee1dec10ff7fbacda4f34a21a44d769d37008ca27980f6af6a4625cb4707",
+      "sha256": "9c846e32a07f6ac6696526e6068a59bffab0bd6a3e84d5029f9a911a4f789d48",
+      "bytes": 38914,
+      "characters": 38,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "es",
+      "key": "tickle",
+      "identity": "896aef218cc52990978da9c9fde238658cccd34531c0b282d4e553232ecdbed9",
+      "sha256": "ca576e2ff19477c5e98b7ec87169d9406f73494a018c8989e3033ffb4c93a4e4",
+      "bytes": 25539,
+      "characters": 16,
+      "reportedCharacterCost": "4"
+    },
+    {
+      "language": "en",
+      "key": "tickle",
+      "identity": "66cff6111043d963b650d5d7783f3b930a133ee62922315d090b3ed47201049a",
+      "sha256": "9978186089f70810061692051ab82ea568888d1f70f402341d000ee767d29557",
+      "bytes": 18852,
+      "characters": 13,
+      "reportedCharacterCost": "4"
+    },
+    {
+      "language": "es",
+      "key": "moon",
+      "identity": "02d60dd8d096d647a2da1225b5b7b2ff5ba60d3a6eaf57c827673521b0ded969",
+      "sha256": "dad64e70e154f1cd1bb70ac97e86a4c3381bf139a0a25456ac8025047293aba3",
+      "bytes": 39750,
+      "characters": 31,
+      "reportedCharacterCost": "9"
+    },
+    {
+      "language": "en",
+      "key": "moon",
+      "identity": "81fce1f73c6b29a73c972a28b36810efecdb94b73aec4759c77f2939cadca5f5",
+      "sha256": "dcf8d962112db07a3c07a1836435d010f988ff3f863f16fc6c2f4067a7aef529",
+      "bytes": 43511,
+      "characters": 36,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "es",
+      "key": "lamp",
+      "identity": "2ff9201ce81d5cfcfb45c7aba12e32ee69bebf5bf0d3b579d146091e13218986",
+      "sha256": "dfb4d3ef314186b8ffb8b15c447ced9a78b5c519f5a169c99c55506986babad9",
+      "bytes": 34316,
+      "characters": 23,
+      "reportedCharacterCost": "6"
+    },
+    {
+      "language": "en",
+      "key": "lamp",
+      "identity": "80b6faf900a30b7fd8d3e1b6ba46eaeaa7beec50680fe818f1a65fe9ae76cca5",
+      "sha256": "a32241f7604b73edba501c3c8667b7987213eb9667a1228a8441c8f57017e933",
+      "bytes": 26375,
+      "characters": 22,
+      "reportedCharacterCost": "6"
+    },
+    {
+      "language": "es",
+      "key": "story0",
+      "identity": "a87c7d636e8a5f798de01e4a620d838347057fb90d85ec524746902583eed588",
+      "sha256": "195fc5b1faf7e0be4c4c72b6fd0e55630b8b5d9cd922418b422111cc81ffd06e",
+      "bytes": 63573,
+      "characters": 47,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "en",
+      "key": "story0",
+      "identity": "f8e5192867fb686873d3e63aa8334ecef827ca60f9ac8e78a88b561cf866143e",
+      "sha256": "43cd6967a5a786d4576134445f8f58a04fa3d0c13b2cbb1c31987a4b99fb9788",
+      "bytes": 61902,
+      "characters": 65,
+      "reportedCharacterCost": "18"
+    },
+    {
+      "language": "es",
+      "key": "story1",
+      "identity": "6ddd9328dc680181f0241a0218acea374c3a17b22950b9a1b01c776f18ad9759",
+      "sha256": "55f6b45e522613b1a86ef47d001e7ea80f530f85f3c9f6f0b0f4d6eedccdec2b",
+      "bytes": 58976,
+      "characters": 50,
+      "reportedCharacterCost": "14"
+    },
+    {
+      "language": "en",
+      "key": "story1",
+      "identity": "7f577f82335cf93c51dfe16529c2261c9f41f24ee34410d552127ac3cf08d900",
+      "sha256": "5446120d745a1a1e114f2a9cef8f04ed850b358aa775399aca9df7df73332d4f",
+      "bytes": 55214,
+      "characters": 53,
+      "reportedCharacterCost": "15"
+    },
+    {
+      "language": "es",
+      "key": "story2",
+      "identity": "bb4ad5be983b172f933970c4125297778e051e190984acb1bd1222770cf11f88",
+      "sha256": "d9ecbf4dbdf89a3753074ca980c29ed2cd6bc8692fa28b95327b94841a2596a8",
+      "bytes": 66499,
+      "characters": 55,
+      "reportedCharacterCost": "15"
+    },
+    {
+      "language": "en",
+      "key": "story2",
+      "identity": "40b59d1d93f764fb0a2bef7831b46a95571eff3ab78fb4c90e3aa485ea21bdc6",
+      "sha256": "9ce52808245d26e2c4be8909ea0100af0d21fc26f321a9999c7106f01f4b7c08",
+      "bytes": 65663,
+      "characters": 64,
+      "reportedCharacterCost": "18"
+    },
+    {
+      "language": "es",
+      "key": "prop_bunny",
+      "identity": "31ad3537632f2b9cb330cd2235e6a71ab1fee04d566e2b891d11bc137019c466",
+      "sha256": "97a0c13db91aeeb98c7e791bc9e1ea8d15d2ac65a13c54bfaf136d35efc5754e",
+      "bytes": 53124,
+      "characters": 48,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "en",
+      "key": "prop_bunny",
+      "identity": "3744301cadac77b60b22e382024cdfa1c13cff72acaeac56da67f54c0133155c",
+      "sha256": "92d8e7adf00495afe5c0f0b2c2d76e96790290f3d8424eb1acb8ef62eb10dedc",
+      "bytes": 51453,
+      "characters": 47,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "es",
+      "key": "prop_kitten",
+      "identity": "2847ecd730b30fbd567e065cbd381342fca956c25844021d611f515ea4eac782",
+      "sha256": "d1693d8d6109159455c0bc58dbfd1d393f51ab59d07089cb04ae3afdfd293f6c",
+      "bytes": 49363,
+      "characters": 38,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "en",
+      "key": "prop_kitten",
+      "identity": "f99030a92eeb61f1719d17b6a24e7722ba822c7c25eea98907390109d55cb27f",
+      "sha256": "fb6210c6a7ba48fa6d7a726fdb9ab8da6a1f9cbdfb963690057c65a6760fd3f0",
+      "bytes": 41839,
+      "characters": 35,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "es",
+      "key": "prop_bear",
+      "identity": "acba52ed17932de8282c08b1ba1e013862e3b6e8e39a7821e154c1fa4e7e140d",
+      "sha256": "fdf8dedc42afe0490e9df95eb4385bc08911260b15f75f14cbad8d63fa88b190",
+      "bytes": 38914,
+      "characters": 33,
+      "reportedCharacterCost": "9"
+    },
+    {
+      "language": "en",
+      "key": "prop_bear",
+      "identity": "71abda992aac37798534c7234e9a59d42b63fb4d08c9040295028b05d35438d1",
+      "sha256": "144dc9d52579cbd5ff7830c8bbd8042b13865c4cc72afaf77f7040693ce2c42d",
+      "bytes": 38914,
+      "characters": 41,
+      "reportedCharacterCost": "11"
+    },
+    {
+      "language": "es",
+      "key": "prop_puppy",
+      "identity": "55e13f0a18bf659c73bc6ff5c4c4b35eadd128e2263fbd3ca718a91b6de68867",
+      "sha256": "bf862c4fecbd9c773424cba56f61fa5b794985d5fd59108dc3883e2ba63d2041",
+      "bytes": 37660,
+      "characters": 29,
+      "reportedCharacterCost": "8"
+    },
+    {
+      "language": "en",
+      "key": "prop_puppy",
+      "identity": "661ff461c824dd635db6673eb1aba630f219d3339147b52dfaf49f290e8f5f01",
+      "sha256": "4b69ef613eb3a297e0ad82c4c93f33edfa8e24e00d5f02cb81c3ad1e2a713f7b",
+      "bytes": 42675,
+      "characters": 37,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "es",
+      "key": "prop_fox",
+      "identity": "50850700b3f79ab37f061aeb35191541cde70b855ad1b8954e8b435ebdc8934f",
+      "sha256": "9bdc4d205807d9039abe05ea65552700cec692dd20735355b48595e1ca1a792f",
+      "bytes": 43511,
+      "characters": 37,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "en",
+      "key": "prop_fox",
+      "identity": "b518293e628b789ecd93890e6ac4c9b8ceee3136e1b395f198f904cf848ae9dd",
+      "sha256": "080d59a9ce6281d6ca9c0d999c4085e81997699b41710ef480d17b12e623106a",
+      "bytes": 44765,
+      "characters": 35,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "es",
+      "key": "prop_panda",
+      "identity": "c666a3e6fe6c3070de92995959eea62e3e8772f1c42365e0855ef9604ac9fd7a",
+      "sha256": "3fa146c5ed6446e41b19f97d02532019ad8603d43e1cf62c7d686f401e0f7b02",
+      "bytes": 30973,
+      "characters": 24,
+      "reportedCharacterCost": "7"
+    },
+    {
+      "language": "en",
+      "key": "prop_panda",
+      "identity": "b20145bafdd41d5ceae18ffdfbcd61ec07c8284c27d372f352579f791dd6c40e",
+      "sha256": "dd663bd1b9f147013d21df582b06ffdaa80cd826754137e1ae6aed01773e6881",
+      "bytes": 35152,
+      "characters": 29,
+      "reportedCharacterCost": "8"
+    },
+    {
+      "language": "es",
+      "key": "goodnight_bunny",
+      "identity": "c1d39778510686928516608a9a98065b8bd796cc8b987b2b00286c5f27770650",
+      "sha256": "1bb95d267bde5013584a61ffd9cb7b3a8802beb3b0f9ae59c37240c6ac2688b4",
+      "bytes": 44347,
+      "characters": 41,
+      "reportedCharacterCost": "11"
+    },
+    {
+      "language": "en",
+      "key": "goodnight_bunny",
+      "identity": "f30c2b2f6031a4fb4d7b191d7af82ed91ed8f31e8767800f9be0aef56a8eee82",
+      "sha256": "d55b08b11bd543ac1cfd3ff12639636f8d009036e2ff6a31b07988863c7edbc9",
+      "bytes": 35152,
+      "characters": 33,
+      "reportedCharacterCost": "9"
+    },
+    {
+      "language": "es",
+      "key": "goodnight_kitten",
+      "identity": "0a08f3887ede29983325aac84c86e65cd2a0b1a231f9bd8300a0c0ddb9c615dd",
+      "sha256": "8a0a6f7b51a1e9955d14a0d0c27f22047785eadbb45cb898b46b4796dc8506d0",
+      "bytes": 54378,
+      "characters": 35,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "en",
+      "key": "goodnight_kitten",
+      "identity": "951030e9406192636fdddf03861434bff057e120455e3f7d13836f179a0165b4",
+      "sha256": "955572f87a09134c501bcfc9165b9391f7c511fb875825c635f8f55c6a214e38",
+      "bytes": 36824,
+      "characters": 31,
+      "reportedCharacterCost": "9"
+    },
+    {
+      "language": "es",
+      "key": "goodnight_bear",
+      "identity": "148fd4ddd77cba29b99ece88e4fbc5959caea086cfdab1349bc2b2f01eec7337",
+      "sha256": "14cb37c13369119b1aba955108372b172c45b98c3a4b263de58a099009b96583",
+      "bytes": 52288,
+      "characters": 45,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "en",
+      "key": "goodnight_bear",
+      "identity": "7a2d14ed9967951081ea623464e254bcca9ebc6e5d7284aaf88e7255de7d7596",
+      "sha256": "441044426381c7c555ccfdf15fa200e37858dd5803fd684b84ad9d94d1d197a7",
+      "bytes": 57722,
+      "characters": 57,
+      "reportedCharacterCost": "16"
+    },
+    {
+      "language": "es",
+      "key": "goodnight_puppy",
+      "identity": "af61fcecda4ca3ce81c5952527443098850cf2fae44d0de88fd33c7ca217c62b",
+      "sha256": "8a2495541044d2f517c856e4b21bc045d6f0c19e4d867b29008fa3acee266fb9",
+      "bytes": 75276,
+      "characters": 48,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "en",
+      "key": "goodnight_puppy",
+      "identity": "0175ec4b38c30b43ef9cc0ec20e65d3aa7149a2cd44d975ef36f91071a5e16f1",
+      "sha256": "125bce5416aa64de4c5e8ef11a1e1e47ebedf97db2ffb614a2a65bf2bfed0899",
+      "bytes": 50199,
+      "characters": 45,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "es",
+      "key": "goodnight_fox",
+      "identity": "5327c53466a7e2e3821286ed294ee2e344dada18bd976f9d316c6101858fc108",
+      "sha256": "f4c0e2444ad007bb3e1e012d7a45909517873ec3587535ee1588b6da51b8920f",
+      "bytes": 59812,
+      "characters": 48,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "en",
+      "key": "goodnight_fox",
+      "identity": "7769628310fa7e613d94e827eda5ae3f6a1613ac6d91b28e31fcd324e87afd49",
+      "sha256": "5544e11bdd2a76b143d3726049f89ecb75138156fb97ed2f44ca275f26d16e4c",
+      "bytes": 47273,
+      "characters": 49,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "es",
+      "key": "goodnight_panda",
+      "identity": "aa942f326a36d2c6e2d3a7300ae0f0f2b34a67b280199f76fe3bea7360572f3b",
+      "sha256": "077c7b1cfec3501126e57ff1f580c18433ac15ab33f98fc32205c37bab1f7e72",
+      "bytes": 61902,
+      "characters": 42,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "en",
+      "key": "goodnight_panda",
+      "identity": "ea91c02d2820a06798f85eae1b70a49148dab9672c93eea50f6ecd07669226c0",
+      "sha256": "8c81d26ab8c1aa296df00e88a559c63b0bef95377fff4005127e667a245d913b",
+      "bytes": 52288,
+      "characters": 50,
+      "reportedCharacterCost": "14"
+    },
+    {
+      "language": "es",
+      "key": "activity_pet",
+      "identity": "7da575c867707866e73c122443dce332203db4d0fdf0a0f6347296c87986e669",
+      "sha256": "6cabefb1b114350923877efbddb355f006e3ef421e6d5255385a3db70f52ac82",
+      "bytes": 45601,
+      "characters": 41,
+      "reportedCharacterCost": "11"
+    },
+    {
+      "language": "en",
+      "key": "activity_pet",
+      "identity": "9b3ad8df1f3287011f3ea1fa8dacd2abe634f3036772dd5dea52f37cd0711b34",
+      "sha256": "788db5a80e84f66905d0399782ebb1fcc2465ce1670e3e7c89e54b083bf8b0ea",
+      "bytes": 38078,
+      "characters": 43,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "es",
+      "key": "activity_bubbles",
+      "identity": "752c63d1bcac9ba9baf17df32d87aa45151552034b06a41329057a8b268775aa",
+      "sha256": "b37ea07ea2a879dcb33b87dd0bbc116d346a1805a2ea829f0d534ff2e316f60b",
+      "bytes": 53124,
+      "characters": 42,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "en",
+      "key": "activity_bubbles",
+      "identity": "27e1458e7d52f448cc28d85580a8338980bd1e0c163a8b5e48d5064ca9862222",
+      "sha256": "b49b6930365b420441c85dc50cb6ec86351d8d8f692a60ce11c8fd8a50eee9c4",
+      "bytes": 46437,
+      "characters": 43,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "es",
+      "key": "activity_brush",
+      "identity": "24f478ba72c10fd7a54869f3483644c236e8984dfbfc428b0c432cb6d58d00b3",
+      "sha256": "30b1e0c3265760ae05d0efdbb86003e38ca62627e441a03f55d51b61acb11d2e",
+      "bytes": 41839,
+      "characters": 41,
+      "reportedCharacterCost": "11"
+    },
+    {
+      "language": "en",
+      "key": "activity_brush",
+      "identity": "79ec5222ef66a4f5154b28dab3ff7e0f37b7c46afc40dbda97abe59c6c774e1e",
+      "sha256": "812ea6988648666ea1d53822d45972e05bac47029b3563bd9ff26bbbda57a2f2",
+      "bytes": 44347,
+      "characters": 45,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "es",
+      "key": "activity_wash",
+      "identity": "56498a84253641c02a25ccbc85d722a40d2a7b1d041ad710026143251abbf1ab",
+      "sha256": "94e7dab9a279a18e7e414daa037a4caf0e3365c5ff8042cc32cc770d2f2d1749",
+      "bytes": 45601,
+      "characters": 35,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "en",
+      "key": "activity_wash",
+      "identity": "72a42eff61d3150b60bcb49fa3a7ea249f13d9f29126bd30c74832d1442b0da1",
+      "sha256": "f4c7276ae624c8002ad63c98f1498d57f7d99f95682389465a59b2d2ccb4794b",
+      "bytes": 42675,
+      "characters": 46,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "es",
+      "key": "activity_tidy",
+      "identity": "e9f93fd4870049de37cc79d8b2a6ab1a951141bbc9a3b26a15948058eaa057a9",
+      "sha256": "b876107d412168ce63a0b55e6246a677e9ba67939e668e8578e73e6d8241a0f7",
+      "bytes": 44347,
+      "characters": 37,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "en",
+      "key": "activity_tidy",
+      "identity": "e04631e8bca5073af21761eed16014f084b20ff2aadda098690410030b21a01b",
+      "sha256": "3bfe30e30506b8a7d68d805a408cb672ded1d9ef0336c768f4a17679d2aed634",
+      "bytes": 37660,
+      "characters": 40,
+      "reportedCharacterCost": "11"
+    },
+    {
+      "language": "es",
+      "key": "activity_stars",
+      "identity": "1bd22cf4fdda9c4b2e2671c3495f3c05d9a367aa3481106baffc1b2a4809c764",
+      "sha256": "6fac86fcaeef13c6c859b2d0865bdb1c3cc4689998ab0e0b23af2e8885e44140",
+      "bytes": 42675,
+      "characters": 44,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "en",
+      "key": "activity_stars",
+      "identity": "29763d368b46eaeb40e3a9d59f8dce8e33e32c85f70b3804b5974b491c04e485",
+      "sha256": "ed324fa2e0ba4ff7e6b573191b0d28bfe102bcdd45c94f89300f95f125b95a43",
+      "bytes": 47691,
+      "characters": 46,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "es",
+      "key": "activity_snack",
+      "identity": "b7319b2e7d0a4036afff7451e7f3e88af759786f088fb73c7937ea70f8a799e1",
+      "sha256": "188a729df8eb38c83bdd7006bd70f288eceddb5eaa7ff3264b7e9a40aa781b68",
+      "bytes": 34316,
+      "characters": 29,
+      "reportedCharacterCost": "8"
+    },
+    {
+      "language": "en",
+      "key": "activity_snack",
+      "identity": "c8864dbbe9be25a12cf182f60bf500bd915961a666f453049f2247066b739d76",
+      "sha256": "afb8f736e1ce2ee8b84b239548cfa0098c99890ec327110541e7ab9914bce68e",
+      "bytes": 38914,
+      "characters": 39,
+      "reportedCharacterCost": "11"
+    },
+    {
+      "language": "es",
+      "key": "activity_ball",
+      "identity": "5b63fe169fac41b92eb33537ad2066cf84b9eb99f03e0eb454dc671b41f8555a",
+      "sha256": "9aea2348c5a035e2ab8bd311b56e87b37b5b687f101965bd88ef9c52e2a29551",
+      "bytes": 48527,
+      "characters": 33,
+      "reportedCharacterCost": "9"
+    },
+    {
+      "language": "en",
+      "key": "activity_ball",
+      "identity": "b13f452b596ce4afef4f4ca766c5aa7ed153d41922840d4cf4f6b3aa075aaf26",
+      "sha256": "9d6ef0f1dd285aafa57c3996f05919edb88c2e6cb212ab1e1a99235846febd0d",
+      "bytes": 33898,
+      "characters": 33,
+      "reportedCharacterCost": "9"
+    },
+    {
+      "language": "es",
+      "key": "activity_prop",
+      "identity": "5556a1855eca1e951f667e1282ba6833426267d737b1d5b8ceca0579f9144cf6",
+      "sha256": "28ef4bd2b2af5501cf154337074168934aea0381e77fbd6e0aa63cdc4a759cff",
+      "bytes": 38078,
+      "characters": 28,
+      "reportedCharacterCost": "8"
+    },
+    {
+      "language": "en",
+      "key": "activity_prop",
+      "identity": "520933a549884e25607d54514983085a7e6a92415a1564017bd4ab652dde1453",
+      "sha256": "842d4b612beafb6cf068c7911589ded79a058380d00d0eb3454168a6ec129e99",
+      "bytes": 40586,
+      "characters": 46,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "es",
+      "key": "activity_kiss",
+      "identity": "ea387ae257599d4e31dfc60a12532c4869db10f528377dd1a500a8cb237dc1d3",
+      "sha256": "8692f3081695ee75727a68e472621c3a643a3f8772065e28f175ad8fea4f8ae5",
+      "bytes": 49363,
+      "characters": 32,
+      "reportedCharacterCost": "9"
+    },
+    {
+      "language": "en",
+      "key": "activity_kiss",
+      "identity": "c7d4a26d8f09da4fc531af1044f9103476b5066d09af1a64c39cf2b0d0764aa3",
+      "sha256": "9a52b80d47730b8f1849ca97ac38a9755536acf038de5ae314b9d88b69e7ded0",
+      "bytes": 38914,
+      "characters": 41,
+      "reportedCharacterCost": "11"
+    },
+    {
+      "language": "es",
+      "key": "activity_lamp",
+      "identity": "82ceb8b965311d0eddd0d7a215f129a901feb63c1fe8c4a41ca27175df544a96",
+      "sha256": "ba504a391ef8620b2f6853164c1c370b732a9196001f35dd0fc5e93defe20bdf",
+      "bytes": 44765,
+      "characters": 38,
+      "reportedCharacterCost": "10"
+    },
+    {
+      "language": "en",
+      "key": "activity_lamp",
+      "identity": "556f8e102c1bf2002a9d312699e098e8b04b65c12c2fcf1573211d0aaaf019f7",
+      "sha256": "69363ad71c560f057d4ad35f8ed4707aba21c937ae0d00c356e587a5dfa1cf5d",
+      "bytes": 44347,
+      "characters": 50,
+      "reportedCharacterCost": "14"
+    },
+    {
+      "language": "es",
+      "key": "activity_story",
+      "identity": "4380b646e532d851b3f08a889bd07166fb7115e103a1549aba239aa02e30ab44",
+      "sha256": "1c80f444ac9e9e7fae632fbd5c9b6c6e058d7fa6112fe5d2f233351db18fbb67",
+      "bytes": 65663,
+      "characters": 50,
+      "reportedCharacterCost": "14"
+    },
+    {
+      "language": "en",
+      "key": "activity_story",
+      "identity": "5adf73b5e3906c7b2dafbc52ccf0e386acd2e43c240e2c0ee6ffa2b2b3239cd7",
+      "sha256": "87456f26aee94cbf6ef48fc47aacc3c743f1ec83ff2fce90072f21a5c45111d5",
+      "bytes": 52288,
+      "characters": 48,
+      "reportedCharacterCost": "13"
+    },
+    {
+      "language": "es",
+      "key": "activity_song",
+      "identity": "486f830366dfe0ce9a2c24ad74277490af4b93de4f8d2ed6737e9691d33ab2c4",
+      "sha256": "3271fcb7c05c659b0f5839032b4bae0e6f51c0ba8f5cb04a2c3205a278ebdf6d",
+      "bytes": 56050,
+      "characters": 45,
+      "reportedCharacterCost": "12"
+    },
+    {
+      "language": "en",
+      "key": "activity_song",
+      "identity": "28f137d3a9ec21a01f79de47544f04bb8a1b277a03f6f3f444991e45d210384b",
+      "sha256": "89bc754aaacf445e21ccfff9f170af5018c85a6a6887686153f38c15db5a321e",
+      "bytes": 43511,
+      "characters": 44,
+      "reportedCharacterCost": "12"
+    }
+  ]
 }

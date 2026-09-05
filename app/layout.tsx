@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'Animalitos a dormir',
+  title: 'Animalitos a dormir · elevenlabs.io',
   description:
     'Seis animalitos, 36 actividades y voces suaves en español e inglés. Un juego de buenas noches para los más pequeños.',
   manifest: '/manifest.webmanifest',

@@ -69,3 +69,21 @@ await test('install manifest is self-contained', async () => {
   assert.equal(m.display, 'standalone');
   for (const icon of m.icons) await readFile('public' + icon.src);
 });
+
+await test('all shipped narration belongs to the same ElevenLabs generation', async () => {
+  const manifest = await json('docs/voice-manifest.json');
+  assert.equal(manifest.provider, 'ElevenLabs API');
+  assert.equal(manifest.clips, 68);
+  assert.equal(manifest.files.length, 68);
+  const { createHash } = await import('node:crypto');
+  for (const entry of manifest.files) {
+    const bytes = await readFile(
+      'public/voice/' + entry.language + '/' + entry.key + '.mp3',
+    );
+    assert.equal(
+      createHash('sha256').update(bytes).digest('hex'),
+      entry.sha256,
+    );
+  }
+  assert.deepEqual(manifest.lines, content.lines);
+});
