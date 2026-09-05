@@ -53,6 +53,7 @@ export type Preferences = {
   motion: boolean;
   language: Language;
   voiceSpeed: 'calm' | 'normal';
+  spanishVoice: 'spain' | 'original';
 };
 export type GameState = {
   view: 'home' | 'room' | 'ending';
@@ -74,6 +75,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   motion: true,
   language: 'es',
   voiceSpeed: 'calm',
+  spanishVoice: 'spain',
 };
 export const freshGame = (): GameState => ({
   view: 'home',
@@ -205,6 +207,8 @@ export function restoreSaved(
       preferences.language = value.preferences.language;
     if (['calm', 'normal'].includes(value.preferences?.voiceSpeed))
       preferences.voiceSpeed = value.preferences.voiceSpeed;
+    if (['spain', 'original'].includes(value.preferences?.spanishVoice))
+      preferences.spanishVoice = value.preferences.spanishVoice;
     return { game, preferences };
   } catch {
     return fallback;

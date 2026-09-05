@@ -1,0 +1,211 @@
+{
+  "clips": 34,
+  "decoded": true,
+  "nonSilent": true,
+  "checks": [
+    {
+      "file": "activity_ball.mp3",
+      "seconds": 2.09,
+      "peak": 0.73579,
+      "rms": 0.08931
+    },
+    {
+      "file": "activity_brush.mp3",
+      "seconds": 2.322,
+      "peak": 0.75723,
+      "rms": 0.08808
+    },
+    {
+      "file": "activity_bubbles.mp3",
+      "seconds": 2.368,
+      "peak": 0.62505,
+      "rms": 0.11171
+    },
+    {
+      "file": "activity_kiss.mp3",
+      "seconds": 2.043,
+      "peak": 0.68717,
+      "rms": 0.08531
+    },
+    {
+      "file": "activity_lamp.mp3",
+      "seconds": 2.415,
+      "peak": 0.62344,
+      "rms": 0.10336
+    },
+    {
+      "file": "activity_pet.mp3",
+      "seconds": 2.554,
+      "peak": 0.49271,
+      "rms": 0.09225
+    },
+    {
+      "file": "activity_prop.mp3",
+      "seconds": 1.625,
+      "peak": 0.77208,
+      "rms": 0.08763
+    },
+    {
+      "file": "activity_snack.mp3",
+      "seconds": 1.533,
+      "peak": 0.61935,
+      "rms": 0.08853
+    },
+    {
+      "file": "activity_song.mp3",
+      "seconds": 2.461,
+      "peak": 0.73119,
+      "rms": 0.10001
+    },
+    {
+      "file": "activity_stars.mp3",
+      "seconds": 2.601,
+      "peak": 0.69462,
+      "rms": 0.09451
+    },
+    {
+      "file": "activity_story.mp3",
+      "seconds": 2.972,
+      "peak": 0.69725,
+      "rms": 0.09143
+    },
+    {
+      "file": "activity_tidy.mp3",
+      "seconds": 1.95,
+      "peak": 0.60034,
+      "rms": 0.09097
+    },
+    {
+      "file": "activity_wash.mp3",
+      "seconds": 2.183,
+      "peak": 0.59141,
+      "rms": 0.089
+    },
+    {
+      "file": "ending.mp3",
+      "seconds": 3.715,
+      "peak": 0.73145,
+      "rms": 0.09777
+    },
+    {
+      "file": "goodnight_bear.mp3",
+      "seconds": 2.601,
+      "peak": 0.69147,
+      "rms": 0.0941
+    },
+    {
+      "file": "goodnight_bunny.mp3",
+      "seconds": 2.276,
+      "peak": 0.67115,
+      "rms": 0.08689
+    },
+    {
+      "file": "goodnight_fox.mp3",
+      "seconds": 3.065,
+      "peak": 0.73,
+      "rms": 0.08049
+    },
+    {
+      "file": "goodnight_kitten.mp3",
+      "seconds": 2.276,
+      "peak": 0.59696,
+      "rms": 0.09515
+    },
+    {
+      "file": "goodnight_panda.mp3",
+      "seconds": 2.601,
+      "peak": 0.7516,
+      "rms": 0.10334
+    },
+    {
+      "file": "goodnight_puppy.mp3",
+      "seconds": 3.111,
+      "peak": 0.63598,
+      "rms": 0.0821
+    },
+    {
+      "file": "lamp.mp3",
+      "seconds": 1.486,
+      "peak": 0.66192,
+      "rms": 0.08938
+    },
+    {
+      "file": "moon.mp3",
+      "seconds": 1.95,
+      "peak": 0.79154,
+      "rms": 0.0972
+    },
+    {
+      "file": "praise.mp3",
+      "seconds": 2.322,
+      "peak": 0.67716,
+      "rms": 0.08963
+    },
+    {
+      "file": "prop_bear.mp3",
+      "seconds": 2.136,
+      "peak": 0.57989,
+      "rms": 0.08895
+    },
+    {
+      "file": "prop_bunny.mp3",
+      "seconds": 2.972,
+      "peak": 0.59302,
+      "rms": 0.08365
+    },
+    {
+      "file": "prop_fox.mp3",
+      "seconds": 2.229,
+      "peak": 0.73105,
+      "rms": 0.09629
+    },
+    {
+      "file": "prop_kitten.mp3",
+      "seconds": 2.508,
+      "peak": 0.71351,
+      "rms": 0.08893
+    },
+    {
+      "file": "prop_panda.mp3",
+      "seconds": 1.393,
+      "peak": 0.658,
+      "rms": 0.08997
+    },
+    {
+      "file": "prop_puppy.mp3",
+      "seconds": 1.811,
+      "peak": 0.75712,
+      "rms": 0.11955
+    },
+    {
+      "file": "story0.mp3",
+      "seconds": 3.483,
+      "peak": 0.73442,
+      "rms": 0.09019
+    },
+    {
+      "file": "story1.mp3",
+      "seconds": 2.972,
+      "peak": 0.52402,
+      "rms": 0.09051
+    },
+    {
+      "file": "story2.mp3",
+      "seconds": 3.854,
+      "peak": 0.56225,
+      "rms": 0.09593
+    },
+    {
+      "file": "tickle.mp3",
+      "seconds": 1.393,
+      "peak": 0.68686,
+      "rms": 0.08986
+    },
+    {
+      "file": "welcome.mp3",
+      "seconds": 4.365,
+      "peak": 0.70239,
+      "rms": 0.08631
+    }
+  ]
+}

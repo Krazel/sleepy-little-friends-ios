@@ -22,6 +22,7 @@ for (const name of [
   '/art/panda.png',
   '/voice/elevenlabs/es/welcome.mp3',
   '/voice/elevenlabs/en/welcome.mp3',
+  '/voice/elevenlabs/es-ES-valeria/welcome.mp3',
   '/index.html',
   '/manifest.webmanifest',
   '/icon-192.png',
@@ -30,7 +31,7 @@ for (const name of [
   assert.ok(assets.includes(name), name);
 assert.equal(
   assets.filter((s) => s.startsWith('/voice/') && s.endsWith('.mp3')).length,
-  68,
+  102,
 );
 assert.ok(assets.some((s) => s.endsWith('.js')));
 assert.ok(assets.some((s) => s.endsWith('.css')));
@@ -116,7 +117,7 @@ const art = await fire('fetch', {
   },
 });
 assert.equal(await art.text(), 'cached:/art/bunny.png');
-for (const lang of ['es', 'en']) {
+for (const lang of ['es', 'en', 'es-ES-valeria']) {
   const voice = await fire('fetch', {
     request: {
       url: 'https://test.local/voice/elevenlabs/' + lang + '/welcome.mp3',

@@ -123,7 +123,9 @@ await test('prepared voice plays, music ducks, cached clips are reused and pace 
     audio.speak('Hola', 'welcome', 'es', 0);
     await wait();
     assert.equal(stats.sources[1].playbackRate.value, 1.08);
-    assert.deepEqual(stats.fetched, ['/voice/elevenlabs/es/welcome.mp3']);
+    assert.deepEqual(stats.fetched, [
+      '/voice/elevenlabs/es-ES-valeria/welcome.mp3',
+    ]);
   } finally {
     audio.dispose();
     cleanup();
@@ -229,4 +231,53 @@ await test('sound can resume after leaving a room and missing audio APIs are har
   silent.dispose();
   delete globalThis.window;
   delete globalThis.document;
+});
+
+await test('switching Spanish narrator cancels stale speech and keeps distinct cached clips', async () => {
+  const { stats, cleanup } = environment(),
+    audio = new BedtimeAudio();
+  try {
+    await audio.unlock();
+    audio.speak('Hola', 'welcome', 'es', 0);
+    await wait();
+    audio.configure({ ...DEFAULT_PREFERENCES, spanishVoice: 'original' });
+    assert.equal(stats.sources[0].stopped, true);
+    audio.speak('Hola', 'welcome', 'es', 0);
+    await wait();
+    audio.configure(DEFAULT_PREFERENCES);
+    audio.speak('Hola', 'welcome', 'es', 0);
+    await wait();
+    assert.deepEqual(stats.fetched, [
+      '/voice/elevenlabs/es-ES-valeria/welcome.mp3',
+      '/voice/elevenlabs/es/welcome.mp3',
+    ]);
+    assert.equal(stats.sources.length, 3);
+  } finally {
+    audio.dispose();
+    cleanup();
+  }
+});
+await test('Spain fallback never silently substitutes a Latin American voice', async () => {
+  const { stats, cleanup } = environment(),
+    audio = new BedtimeAudio();
+  try {
+    await audio.unlock();
+    globalThis.fetch = async () => ({ ok: false });
+    window.speechSynthesis.getVoices = () => [
+      { lang: 'es-MX', name: 'Natural Spanish' },
+    ];
+    audio.speak('Hola', 'missing', 'es', 0);
+    await wait();
+    assert.equal(stats.spoken.length, 0);
+    window.speechSynthesis.getVoices = () => [
+      { lang: 'es-MX', name: 'Natural Spanish' },
+      { lang: 'es-ES', name: 'Spanish Spain' },
+    ];
+    audio.speak('Hola', 'missing', 'es', 0);
+    await wait();
+    assert.equal(stats.spoken[0].voice.lang, 'es-ES');
+  } finally {
+    audio.dispose();
+    cleanup();
+  }
 });

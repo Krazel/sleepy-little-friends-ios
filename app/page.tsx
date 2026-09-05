@@ -22,6 +22,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Switch } from '@/components/ui/switch';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { NativeSelect } from '@/components/ui/native-select';
 import {
   ANIMAL_IDS,
@@ -123,7 +124,10 @@ export default function Home() {
     preferencesRef.current = next;
     audio.current?.configure(next);
     setPreferences(next);
-    if (key === 'language') {
+    if (
+      key === 'language' ||
+      (key === 'spanishVoice' && next.language === 'es')
+    ) {
       activate();
       say(hintKey(), 150);
     }
@@ -712,6 +716,28 @@ export default function Home() {
               />
             </div>
           ))}
+          <fieldset className="voice-options">
+            <legend>{t.spanishVoice}</legend>
+            <RadioGroup
+              aria-label={t.spanishVoice}
+              value={preferences.spanishVoice}
+              onValueChange={(value) =>
+                changePreference(
+                  'spanishVoice',
+                  value as Preferences['spanishVoice'],
+                )
+              }
+            >
+              <label className="voice-option" htmlFor="voice-spain">
+                <RadioGroupItem id="voice-spain" value="spain" />
+                <span>{t.voiceSpain}</span>
+              </label>
+              <label className="voice-option" htmlFor="voice-original">
+                <RadioGroupItem id="voice-original" value="original" />
+                <span>{t.voiceOriginal}</span>
+              </label>
+            </RadioGroup>
+          </fieldset>
           <div className="setting-row">
             <label htmlFor="pace-setting">{t.voiceSpeed}</label>
             <NativeSelect
@@ -742,7 +768,7 @@ export default function Home() {
           <p className="voice-credit">
             <a href="https://elevenlabs.io" target="_blank" rel="noreferrer">
               {language === 'es'
-                ? 'Voz de IA: Sarah · ElevenLabs (elevenlabs.io)'
+                ? `Voz de IA: ${preferences.spanishVoice === 'spain' ? 'Valeria' : 'Sarah'} · ElevenLabs (elevenlabs.io)`
                 : 'AI voice: Sarah · ElevenLabs (elevenlabs.io)'}
             </a>
           </p>

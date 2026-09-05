@@ -13,13 +13,16 @@ export class BedtimeAudio {
     motion: true,
     language: 'es',
     voiceSpeed: 'calm',
+    spanishVoice: 'spain',
   };
   private speechTimer: ReturnType<typeof setTimeout> | null = null;
   configure(prefs: Preferences) {
     const languageChanged = this.prefs.language !== prefs.language;
+    const voiceChanged = this.prefs.spanishVoice !== prefs.spanishVoice;
     this.prefs = { ...this.prefs, ...prefs };
     if (!prefs.sound) this.stop();
-    else if (!prefs.voice || languageChanged) this.cancelSpeech();
+    else if (!prefs.voice || languageChanged || voiceChanged)
+      this.cancelSpeech();
   }
   async unlock() {
     if (!this.prefs.sound) return;
@@ -108,7 +111,11 @@ export class BedtimeAudio {
     });
   }
   private load(key: string, language: Language): Promise<AudioBuffer> {
-    const id = language + '/' + key;
+    const folder =
+      language === 'es' && this.prefs.spanishVoice === 'spain'
+        ? 'es-ES-valeria'
+        : language;
+    const id = folder + '/' + key;
     let promise = this.buffers.get(id);
     if (!promise) {
       promise = (async () => {
@@ -188,12 +195,23 @@ export class BedtimeAudio {
       utterance.volume = 0.8;
       utterance.voice =
         voices
-          .filter((v) => v.lang.startsWith(language))
+          .filter((v) =>
+            language === 'es' && this.prefs.spanishVoice === 'spain'
+              ? v.lang.toLowerCase().replace('_', '-') === 'es-es'
+              : v.lang.startsWith(language),
+          )
           .sort(
             (a, b) =>
               Number(/natural|neural|premium|enhanced/i.test(b.name)) -
               Number(/natural|neural|premium|enhanced/i.test(a.name)),
           )[0] || null;
+      // Do not substitute a different Spanish accent when Spain was selected.
+      if (
+        language === 'es' &&
+        this.prefs.spanishVoice === 'spain' &&
+        !utterance.voice
+      )
+        return;
       if (revision === this.revision) window.speechSynthesis.speak(utterance);
     } catch {
       /* Optional fallback only. */

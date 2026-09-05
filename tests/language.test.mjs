@@ -42,3 +42,29 @@ await test('corrupt or missing language uses device fallback without dropping va
   assert.equal(saved.preferences.language, 'es');
   assert.equal(saved.game.progress.bunny, 3);
 });
+
+await test('Spanish voice choice persists independently of language and progress', () => {
+  const game = freshGame();
+  game.progress.bunny = 3;
+  const saved = serializeGame(game, {
+    ...DEFAULT_PREFERENCES,
+    language: 'en',
+    spanishVoice: 'original',
+  });
+  const restored = restoreSaved(saved, 'es');
+  assert.equal(restored.preferences.spanishVoice, 'original');
+  assert.equal(restored.preferences.language, 'en');
+  assert.equal(restored.game.progress.bunny, 3);
+});
+await test('older saves and invalid voice choices use Spain without losing progress', () => {
+  for (const spanishVoice of [undefined, 'invalid']) {
+    const old = JSON.stringify({
+      version: 2,
+      progress: { kitten: 2 },
+      preferences: { language: 'es', spanishVoice },
+    });
+    const restored = restoreSaved(old);
+    assert.equal(restored.preferences.spanishVoice, 'spain');
+    assert.equal(restored.game.progress.kitten, 2);
+  }
+});

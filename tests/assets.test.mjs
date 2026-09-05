@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { ANIMALS } from '../lib/animals.ts';
@@ -86,4 +87,23 @@ await test('all shipped narration belongs to the same ElevenLabs generation', as
     );
   }
   assert.deepEqual(manifest.lines, content.lines);
+});
+
+await test('Spain narration covers every line and retains the original voice files', async () => {
+  const manifest = JSON.parse(
+    await readFile('docs/voice-spain-manifest.json', 'utf8'),
+  );
+  assert.equal(manifest.catalogAccent, 'peninsular');
+  assert.equal(manifest.files.length, 34);
+  for (const entry of manifest.files) {
+    const bytes = await readFile(
+      'public/voice/elevenlabs/es-ES-valeria/' + entry.key + '.mp3',
+    );
+    assert.equal(
+      createHash('sha256').update(bytes).digest('hex'),
+      entry.sha256,
+    );
+    await readFile('public/voice/elevenlabs/es/' + entry.key + '.mp3');
+    await readFile('public/voice/elevenlabs/en/' + entry.key + '.mp3');
+  }
 });

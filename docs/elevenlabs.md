@@ -34,3 +34,15 @@ Tarea responsable del producto: 01a06ecc-71e2-77c1-a108-08f629f41bea. Plataforma
 ## Caché de actualizaciones
 
 Los archivos actuales viven bajo /voice/elevenlabs/es y /voice/elevenlabs/en. Este espacio de rutas distingue las voces nuevas de los MP3 Microsoft de versiones anteriores; un service worker antiguo no puede devolver sus audios al cargar la nueva versión.
+
+## Opción español de España — 5 septiembre 2026
+
+A petición del usuario se añade Valeria — Clear, Relaxed, Engaging (SzSUM9aqTucCylaROOmf), identificada por el catálogo de ElevenLabs con idioma es y acento peninsular, descripción «Spanish voice from Spain». Se generaron las 34 frases españolas (1.348 caracteres) con eleven_multilingual_v2, language_code es y los mismos ajustes calmados. El catálogo permitió su uso y la API generó el lote con la cuota existente, sin cambiar el plan ni habilitar sobrecostes.
+
+La opción España · Valeria es la predeterminada en español, también al actualizar partidas antiguas que aún no tenían preferencia de narradora. Para mayores → Voz en español permite recuperar Voz anterior · Sarah. La selección se guarda por dispositivo, sin cambiar ES/EN ni el progreso. Inglés conserva sus 34 audios de Sarah. Total incluido: 102 MP3 (34 Valeria, 34 Sarah español, 34 Sarah inglés).
+
+Los archivos nuevos están en public/voice/elevenlabs/es-ES-valeria; no se sobrescriben los originales. docs/voice-spain-manifest.json conserva guion, identidad y hashes; docs/voice-spain-audio-check.json acredita decodificación, duración y señal de los 34 archivos. La verificación técnica no sustituye una revisión auditiva humana del acento. El botón Escuchar la voz permite probar la opción elegida. No se usa la API durante las partidas.
+
+Pruebas: 39 pruebas automáticas, tipos y lint correctos; cambio de narradora, cancelación de audio anterior, cachés separadas, persistencia y migración de partidas cubiertos. El paquete web incluye las tres colecciones en la caché sin conexión. El fallback de España sólo permite una voz de sistema es-ES; nunca sustituye silenciosamente otro acento.
+
+Esta entrega actualiza la web existente. La candidata iOS conserva su trabajo pendiente y no hay una nueva subida a TestFlight en esta entrega. La autorización sobre el mínimo iOS 16.4 sigue pendiente; no se ha dado por concedida con este encargo de voces.

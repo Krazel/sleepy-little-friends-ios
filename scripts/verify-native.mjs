@@ -5,7 +5,7 @@ import crypto from 'node:crypto';
 const hash = (p) =>
   crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const root = 'ios/App/App/public';
-for (const language of ['es', 'en']) {
+for (const language of ['es', 'en', 'es-ES-valeria']) {
   const dir = `voice/elevenlabs/${language}`;
   const files = fs
     .readdirSync(`public/${dir}`)
@@ -30,5 +30,5 @@ const html = fs.readFileSync(root + '/index.html', 'utf8');
 assert.ok(!/https?:\/\//.test(html));
 assert.ok(html.includes('viewport-fit=cover'));
 console.log(
-  'Native package verified: six original animals, 68 identical voices, local entry and safe areas',
+  'Native package verified: six original animals, 102 voices, including Spain and original Spanish, local entry and safe areas',
 );

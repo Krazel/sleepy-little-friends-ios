@@ -26,7 +26,7 @@
       "sound": "Sonidos suaves",
       "soundDetail": "Burbujas, notas y nanas",
       "voice": "Narración",
-      "voiceDetail": "Sarah, voz de IA de ElevenLabs en español e inglés",
+      "voiceDetail": "Narración de ElevenLabs; elige la voz en español",
       "motion": "Animaciones suaves",
       "motionDetail": "Pequeños movimientos y corazones",
       "systemMotion": "El dispositivo prefiere reducir el movimiento.",
@@ -59,7 +59,10 @@
       "restartRoom": "Volver a jugar en esta habitación",
       "shh": "Shhh…",
       "collection": "Nuestros amigos",
-      "toyBasket": "Cesta de juguetes"
+      "toyBasket": "Cesta de juguetes",
+      "spanishVoice": "Voz en español",
+      "voiceSpain": "España · Valeria",
+      "voiceOriginal": "Voz anterior · Sarah"
     },
     "en": {
       "titleTop": "Sleepy",
@@ -87,7 +90,7 @@
       "sound": "Gentle sounds",
       "soundDetail": "Bubbles, little notes and lullabies",
       "voice": "Narration",
-      "voiceDetail": "Sarah, an ElevenLabs AI voice in Spanish and English",
+      "voiceDetail": "ElevenLabs narration; choose your Spanish voice",
       "motion": "Gentle animations",
       "motionDetail": "Little movements and hearts",
       "systemMotion": "Your device prefers reduced motion.",
@@ -120,7 +123,10 @@
       "restartRoom": "Play in this room again",
       "shh": "Shhh…",
       "collection": "Our little friends",
-      "toyBasket": "Toy basket"
+      "toyBasket": "Toy basket",
+      "spanishVoice": "Spanish voice",
+      "voiceSpain": "Spain · Valeria",
+      "voiceOriginal": "Original voice · Sarah"
     }
   },
   "activities": {

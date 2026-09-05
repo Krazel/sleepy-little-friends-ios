@@ -1,0 +1,258 @@
+{
+  "provider": "ElevenLabs",
+  "voiceId": "SzSUM9aqTucCylaROOmf",
+  "voiceName": "Valeria - Clear, Relaxed, Engaging",
+  "language": "es-ES",
+  "catalogAccent": "peninsular",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.75,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.9
+  },
+  "outputFormat": "mp3_44100_128",
+  "characters": 1348,
+  "clips": 34,
+  "files": [
+    {
+      "key": "welcome",
+      "identity": "d3b3c4a4fa2886f377e5ba1f3969755c7b018837d90a8ceebbedecab7d42c6a6",
+      "sha256": "a9cd57f2bc6a0098a54ac57dd2dae4e963ed44cb867ce0f098077d58c09c9722",
+      "bytes": 71097,
+      "text": "Hola. Nuestros amiguitos tienen muchas ganas de jugar contigo."
+    },
+    {
+      "key": "ending",
+      "identity": "63e2683ecc1102739e6b353911e8b6b41767c3f389de816cdaecc236a0a5dbe4",
+      "sha256": "b172cbb44167ec8fdaa547c907d6fd76a21fec9f6f2e937009192fa84cfb52b6",
+      "bytes": 60648,
+      "text": "Ya están todos dormiditos. Gracias por cuidarlos. Buenas noches."
+    },
+    {
+      "key": "praise",
+      "identity": "49dd1514bb1aef12cb44519e2d98cb4e44971f96e42e9843278bfaeb3d2f19a6",
+      "sha256": "0b5b6c0fac4e55deb0fb75d5dc11a5de23f34825c8be5bee6e19b26622f35d0d",
+      "bytes": 38078,
+      "text": "Qué bien. Vamos a descubrir algo más."
+    },
+    {
+      "key": "tickle",
+      "identity": "507e218fcc979d2d6020ac3131107d30e46ff5b55f788c6c3dbe2e6ca54e6c29",
+      "sha256": "2467f36ebfaf774cf13f7968cf6324229a2c93212c825c60b4ae75c172f836c3",
+      "bytes": 23449,
+      "text": "¡Qué cosquillas!"
+    },
+    {
+      "key": "moon",
+      "identity": "45f13fa8526ca8656c167a64b250a8b616520fee5cbf6e22e32db03e073a9407",
+      "sha256": "e9e8643e0848604e92047706b8d1f5cc26fd60dc6ece2d01002adf091340bfb4",
+      "bytes": 32226,
+      "text": "Hola, lunita. Qué bonita estás."
+    },
+    {
+      "key": "lamp",
+      "identity": "4cccd35da01f5b6319b46c7538fec51f9e7874dc84542b6c7091c48f7118efb4",
+      "sha256": "93372654ca2093379b39dfec35a6ad77c3d1dab247a5d72b4f2f1b8744185417",
+      "bytes": 24703,
+      "text": "Una lucecita muy suave."
+    },
+    {
+      "key": "story0",
+      "identity": "21601c710e8092159088ca3483ee972feba8047cd2d492f5c7a83aecd6789bc4",
+      "sha256": "b095f57599cc566e0b4821a3ef1983667e2eb4b63a7f3c837eadf5f506ed22f0",
+      "bytes": 56886,
+      "text": "La lunita salió a pasear. Buscaba a sus amigos."
+    },
+    {
+      "key": "story1",
+      "identity": "0eeca0d9cb3fee11a80cc236d04b8e021c3fc3ae4495d6a42a79d90b5d3fe0f1",
+      "sha256": "a4833d46d0c06543c54c6ee392c422b8615e4c2294356da9e4b2927bbc68947e",
+      "bytes": 48527,
+      "text": "Los encontró muy juntitos, compartiendo un abrazo."
+    },
+    {
+      "key": "story2",
+      "identity": "b94d5c431f614326b916b6700d5bfe19625c3a888a1d7d372bf95a45928ee9c3",
+      "sha256": "6db86def7b37d9a43cbf18a972b53ca05a4adaf5bd91ca3082a88a475edaf601",
+      "bytes": 62737,
+      "text": "Y les regaló un sueño bonito. Buenas noches, amiguitos."
+    },
+    {
+      "key": "prop_bunny",
+      "identity": "769b4a8dae2fb559ecf5390c901b6c4c7e8ccd8712aa0ee3459a28b5d2f3e87f",
+      "sha256": "5355d57fa8c7d72eb16b7483986b1d366c39599b48616b3d457fc3a9e358bb6f",
+      "bytes": 48527,
+      "text": "Ponle la mantita a Luna para que esté calentita."
+    },
+    {
+      "key": "prop_kitten",
+      "identity": "31058e4b194255317100b9d8674bcc47f1a9481352464bfb9e38880a5ca88ac0",
+      "sha256": "daf8e2b1d2d77c93d4c19ab3836f0833f7ac5e885cc165bfc393071730d0c889",
+      "bytes": 41004,
+      "text": "Dale su cojín a Milo. Es tan blandito."
+    },
+    {
+      "key": "prop_bear",
+      "identity": "9aa5fa077ce4eff022d866b8293a3f44de9c10d1106ae0849673004cdf19525c",
+      "sha256": "9a2dcb18c1acd9b08a1fc38c1d751080e9a7232fe57b3bf78acb8499bb423e93",
+      "bytes": 35152,
+      "text": "Nube quiere abrazar a su peluche."
+    },
+    {
+      "key": "prop_puppy",
+      "identity": "05b1dec3084ba7b393b2666dcde2006f88ec87897ec0933bc7ada5bdc989137b",
+      "sha256": "9d66f9087e1632962fe77757da8d86ef6086d5b6b8bb3b66d740d88a078809b5",
+      "bytes": 30137,
+      "text": "Arropa a Coco con su mantita."
+    },
+    {
+      "key": "prop_fox",
+      "identity": "3964bbf87b575d5bdcfa959d76ab3ca759bed9b02a80b4376102a85ffe25e0e0",
+      "sha256": "a71cf5c27005babdfeed1b333ac7c7f99cf679cdc3e7bfb8bd19dfa92387cab7",
+      "bytes": 36824,
+      "text": "Dale su dinosaurio de peluche a Pipa."
+    },
+    {
+      "key": "prop_panda",
+      "identity": "f3ddb8cf512b98a57c86c73c409204d0a7a79adc227af31032cb69d746ea0b2c",
+      "sha256": "efc5c846f24f6c7bf535ef9235b7585c8a96143cb2aa40522f5b218c8ced0b3b",
+      "bytes": 23449,
+      "text": "Acerca el cojín a Bambú."
+    },
+    {
+      "key": "goodnight_bunny",
+      "identity": "92482b4449530b5316ff00678f10a0d5406e852778194aa9ad01f5f10912602e",
+      "sha256": "ef8826048cd0dc78738a7eccf15d6ff9cde7d57b3e1e8262a2a23448d0fd1f45",
+      "bytes": 37660,
+      "text": "Buenas noches, Luna. Qué calentita estás."
+    },
+    {
+      "key": "goodnight_kitten",
+      "identity": "430a43c5a39e684283d8b05f1f998da74362726e82db762b378f34539dbbe4be",
+      "sha256": "79adc6fd31207886bf16b30db1dd7ff4629428811ab0c9f9ab2fbd252bc31b68",
+      "bytes": 37660,
+      "text": "Buenas noches, Milo. Dulces sueños."
+    },
+    {
+      "key": "goodnight_bear",
+      "identity": "b40056dd5253cbfe5a057bea900576701061ed10d4bc949445062cc00536b3e8",
+      "sha256": "c16476f9f642381302271e46818e939337441396c6c1d474fbd986296792580b",
+      "bytes": 42675,
+      "text": "Buenas noches, Nube. Tu peluche está contigo."
+    },
+    {
+      "key": "goodnight_puppy",
+      "identity": "721018b453000620913e33ffe10e7964b52f9a9f60f0c10bf1b13a6358d6317d",
+      "sha256": "f4c58daae4e096d63ad5544ba442a18fa5492f4dd92a2e4754230b9e25e4845b",
+      "bytes": 51035,
+      "text": "Buenas noches, Coco. Sueña con muchas aventuras."
+    },
+    {
+      "key": "goodnight_fox",
+      "identity": "125425ea645eac06ee4c4ea3b7479b897ba7157557dfadfaa887078d9af751f1",
+      "sha256": "ab98db2b8f807eaaf900db18a58029d14a3bf006b25081f5c57b341c15e174ca",
+      "bytes": 50199,
+      "text": "Buenas noches, Pipa. Descansa con tu dinosaurio."
+    },
+    {
+      "key": "goodnight_panda",
+      "identity": "bfb0f181ad849744b320efcd8f4e1d1b251f54622b768113a7f178f29b08c3f0",
+      "sha256": "25a13cdbd3a3870482f97386ccf4a62d8eccc7c2f26f95badcdf22590f2bc0ab",
+      "bytes": 42675,
+      "text": "Buenas noches, Bambú. La luna cuida de ti."
+    },
+    {
+      "key": "activity_pet",
+      "identity": "a351c187069416eac11b00f218d9a8434104908ae91ba50e5bf62a6334c40b5a",
+      "sha256": "b9cd40d7b2f6176443ee73f43e12daa04cca70cdb4dc4dbfc9737f79e181af94",
+      "bytes": 41839,
+      "text": "Desliza el dedo para darle unas caricias."
+    },
+    {
+      "key": "activity_bubbles",
+      "identity": "ed0040e77c439572f90581eb2dd9a5d5bc8cc71f04eff0b0d0a400652e0dab5d",
+      "sha256": "84a111085508baaa383520bcb3594332a432cc4ee63cb28c4439dff9d291c348",
+      "bytes": 38914,
+      "text": "¡Cuántas burbujas! Tócalas para hacer pop."
+    },
+    {
+      "key": "activity_brush",
+      "identity": "ec6544efd72c2eec1f95044125917d5d1f0a4e5aad86de6470ee41a8cf51761b",
+      "sha256": "d92c5a4468ed3f900453bfd41f54153256fb249ddcd9cc739c7cd5cd6bdd0d54",
+      "bytes": 38078,
+      "text": "Pasa el cepillo suavemente por su pelito."
+    },
+    {
+      "key": "activity_wash",
+      "identity": "998a21beab823ad36356ed25b3c3c132563493711f186c833f60560c70656a41",
+      "sha256": "13f5bdaa83bd89d234580212eeb6f25ef4f8580bffbff9d423ac44b52765c7bf",
+      "bytes": 35988,
+      "text": "Limpia las manchitas con el dedito."
+    },
+    {
+      "key": "activity_tidy",
+      "identity": "dd26845d5c2618aa83613c7588d0697bd07b715ab34823c81a81a958928c8bce",
+      "sha256": "eea415bf6c9adbfe1183f9d613af1d3c73e095a80d9715a8844a1f3a51d32f6c",
+      "bytes": 32226,
+      "text": "Guarda los tres juguetes en la cesta."
+    },
+    {
+      "key": "activity_stars",
+      "identity": "46d6c3c9665d627cf5ab7fa0a6c9a69de99da3264dea14b4dbafd610090af5bc",
+      "sha256": "d9867070e1fc2012699b960dec8052fc23b00e6efaae1a23807f657d07250cd4",
+      "bytes": 42675,
+      "text": "Enciende las tres estrellitas de la ventana."
+    },
+    {
+      "key": "activity_snack",
+      "identity": "238b97e3ff0fe9c3aaef6e6045e0a85ceebf9b5da10184e867b715719c197873",
+      "sha256": "fab62f6e673c8e17f2632fcfec667fc438f9f5e052b8a0888f63dcee6d6fe8cd",
+      "bytes": 25539,
+      "text": "Acércale un poquito de fruta."
+    },
+    {
+      "key": "activity_ball",
+      "identity": "d5be47ebe57ce7e9f4769eb648f2a9272613d3966b7b158ec408d25c17ae08eb",
+      "sha256": "b3477b949f7bb3dab3ea97d8f5c89d3ad2a2f27177b6f1912ce9889a7b7226e0",
+      "bytes": 34316,
+      "text": "Toca la pelota y mira cómo salta."
+    },
+    {
+      "key": "activity_prop",
+      "identity": "86b653cef36cfd931aad7c0096b7f917f90da354b7fe2d2db6d9a3ae46fda99d",
+      "sha256": "1cee31f672bb38c3a53ef76b349fc7df18fff6fe112654e94e2ceddd54e3d617",
+      "bytes": 27211,
+      "text": "Acércale su objeto favorito."
+    },
+    {
+      "key": "activity_kiss",
+      "identity": "64ad9f95dbd626dd330fb979b725771cc6611473426ae190a39bb18e5334f6dc",
+      "sha256": "429b665ed2875f9134986ff44d5f2e89668baab94fb73f866012688bb8567914",
+      "bytes": 33898,
+      "text": "Dale un besito de buenas noches."
+    },
+    {
+      "key": "activity_lamp",
+      "identity": "abe7404689673b64ef1fefa9d4c001896b12c09ba64d2e4cca371e4981d0e643",
+      "sha256": "b6227b082171dd4aca81a432fff1130fed9725eabade0ee18bba27f9f9d9dc01",
+      "bytes": 39750,
+      "text": "Apaga la luz para que pueda descansar."
+    },
+    {
+      "key": "activity_story",
+      "identity": "d5405a6f0dfb27a777aa7f9cf0f37ec686b3d3fab3f9aad3f4f51a7851851a62",
+      "sha256": "3efecbfc00bb813303126f30515aff973682ccfd4ff9c2884e099e05b4311535",
+      "bytes": 48527,
+      "text": "Vamos a leer un cuento. Toca para pasar la página."
+    },
+    {
+      "key": "activity_song",
+      "identity": "c483502433cd840056724dbb594fd1a45b9cfcc4a0e496facc0b53a0f0e804b2",
+      "sha256": "ecc6bc2287e51ef47c8fad5c3d4c1f12fd7f8632f96cb9dc26a1b223c02fc215",
+      "bytes": 40586,
+      "text": "Toca las cuatro notas para cantarle una nana."
+    }
+  ]
+}

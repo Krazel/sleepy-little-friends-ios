@@ -711,7 +711,9 @@ h1 em {
   border-radius: 28px !important;
   padding: 28px !important;
   max-width: min(440px, calc(100vw - 24px)) !important;
-  max-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px);
+  max-height: calc(
+    100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px
+  );
   overflow-y: auto;
   background: #fffaf0;
   box-shadow: 0 20px 80px #503e4433;
@@ -1693,4 +1695,32 @@ h1 em {
 .voice-credit a {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.voice-options {
+  border: 0;
+  padding: 12px 0;
+  margin: 0;
+  border-bottom: 1px solid #eee2d0;
+  min-width: 0;
+}
+.voice-options legend {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 0 8px;
+}
+.voice-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid #dfcdb8;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.voice-option:has([data-checked]) {
+  background: #e2eee4;
+  border-color: #56766b;
 }

@@ -102,6 +102,7 @@ await test('partial micro progress and bilingual voice preferences survive reloa
     motion: false,
     language: 'en',
     voiceSpeed: 'normal',
+    spanishVoice: 'spain',
   };
   const restored = restoreSaved(serializeGame(s, prefs));
   assert.deepEqual(restored.game.collected.bunny, ['2']);
