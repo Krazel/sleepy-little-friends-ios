@@ -1,0 +1,155 @@
+{
+  "generationMode": "built-in image_gen",
+  "imageSize": {
+    "width": 1024,
+    "height": 1536
+  },
+  "notes": "Three production PNGs, generated in three calls. All have real alpha. Use measured room crops rather than requested 75% split; generator placed splits differently. Pixel bounds are inclusive for props. Interactive positions below are normalized to each cropped room, not full sheet. The images' alpha-zero pixels retain dark RGB, which is invisible when alpha is respected.",
+  "assets": [
+    {
+      "name": "bunny",
+      "path": "C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/bunny-bedroom-sprites.png",
+      "roomCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1033
+      },
+      "roomNormalizedBounds": [
+        0,
+        0,
+        1,
+        0.6725260416666666
+      ],
+      "propAlphaBounds": {
+        "x": 144,
+        "y": 1084,
+        "width": 737,
+        "height": 414
+      },
+      "propNormalizedBounds": [
+        0.140625,
+        0.7057291666666666,
+        0.8603515625,
+        0.9752604166666666
+      ],
+      "propCropWithMargin": {
+        "x": 136,
+        "y": 1076,
+        "width": 753,
+        "height": 430
+      },
+      "animalFace": {
+        "x": 0.515,
+        "y": 0.49
+      },
+      "dragTarget": {
+        "x": 0.51,
+        "y": 0.72
+      },
+      "placedProp": {
+        "centerX": 0.51,
+        "centerY": 0.72,
+        "widthRelativeToRoom": 0.56
+      },
+      "visualNotes": "Cream lop-eared bunny in pink pajamas, upright, no blanket covering body. Mint floral blanket prop. Face stays exposed with blanket covering lower body."
+    },
+    {
+      "name": "kitten",
+      "path": "C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/kitten-bedroom-sprites.png",
+      "roomCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1167
+      },
+      "roomNormalizedBounds": [
+        0,
+        0,
+        1,
+        0.759765625
+      ],
+      "propAlphaBounds": {
+        "x": 363,
+        "y": 1241,
+        "width": 302,
+        "height": 219
+      },
+      "propNormalizedBounds": [
+        0.3544921875,
+        0.8079427083333334,
+        0.6494140625,
+        0.9505208333333334
+      ],
+      "propCropWithMargin": {
+        "x": 355,
+        "y": 1233,
+        "width": 318,
+        "height": 235
+      },
+      "animalFace": {
+        "x": 0.49,
+        "y": 0.46
+      },
+      "lampTarget": {
+        "x": 0.86,
+        "y": 0.425
+      },
+      "lampBounds": {
+        "left": 0.755,
+        "top": 0.33,
+        "right": 0.97,
+        "bottom": 0.53
+      },
+      "visualNotes": "Peach kitten tucked under lavender blanket, glowing star lamp to right on nightstand. Bottom cream moon pillow prop."
+    },
+    {
+      "name": "bear",
+      "path": "C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/bear-bedroom-sprites.png",
+      "roomCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1110
+      },
+      "roomNormalizedBounds": [
+        0,
+        0,
+        1,
+        0.72265625
+      ],
+      "propAlphaBounds": {
+        "x": 348,
+        "y": 1155,
+        "width": 327,
+        "height": 332
+      },
+      "propNormalizedBounds": [
+        0.33984375,
+        0.751953125,
+        0.6591796875,
+        0.9680989583333334
+      ],
+      "propCropWithMargin": {
+        "x": 340,
+        "y": 1147,
+        "width": 343,
+        "height": 348
+      },
+      "animalFace": {
+        "x": 0.515,
+        "y": 0.495
+      },
+      "dragTarget": {
+        "x": 0.515,
+        "y": 0.735
+      },
+      "placedProp": {
+        "centerX": 0.515,
+        "centerY": 0.74,
+        "widthRelativeToRoom": 0.27
+      },
+      "visualNotes": "Lavender bear in cream pajamas on peach cushion, open empty arms. Peach plush bunny prop."
+    }
+  ]
+}
