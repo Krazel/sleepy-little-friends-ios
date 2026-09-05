@@ -137,14 +137,15 @@ try {
     throw new Error(
       'Archived app identity/version does not match the TestFlight release',
     );
-  const voices =
-    fs
-      .readdirSync(path.join(app, 'public/voice/elevenlabs/es'))
-      .filter((x) => x.endsWith('.mp3')).length +
-    fs
-      .readdirSync(path.join(app, 'public/voice/elevenlabs/en'))
-      .filter((x) => x.endsWith('.mp3')).length;
-  if (voices !== 68) throw new Error('Archived app must contain all 68 voices');
+  for (const language of ['es', 'en', 'es-ES-valeria']) {
+    const voices = fs
+      .readdirSync(path.join(app, 'public/voice/elevenlabs', language))
+      .filter((x) => x.endsWith('.mp3'));
+    if (voices.length !== 34)
+      throw new Error('Archived voice collection incomplete: ' + language);
+  }
+  if (!fs.existsSync(path.join(app, 'PrivacyInfo.xcprivacy')))
+    throw new Error('The archived privacy manifest is missing');
   run('codesign', ['--verify', '--deep', '--strict', app]);
   const options = path.join(temp, 'ExportOptions.plist');
   fs.writeFileSync(

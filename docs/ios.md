@@ -6,7 +6,7 @@ La app usa React y Capacitor 8.5.1 con recursos incluidos. No necesita iniciar s
 
 ## Proyecto y pruebas
 
-- Xcode: `ios/App/App.xcodeproj`, esquema compartido `App`, iOS 15 o superior.
+- Xcode: `ios/App/App.xcodeproj`, esquema compartido `App`, iOS 16.4 o superior (mínimo de Safari del diseño con Tailwind 4).
 - VersiÃ³n iOS: 0.3 (1). Bundle ID: `com.krazel.animalitosadormir`.
 - App Store Connect: https://appstoreconnect.apple.com/apps/6809010193/testflight
 - Generar recursos: `npm ci`, `npm run sync:ios`.

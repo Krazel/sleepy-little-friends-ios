@@ -23,7 +23,7 @@ import {
 } from '@/components/ui/dialog';
 import { Switch } from '@/components/ui/switch';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { NativeSelect } from '@/components/ui/native-select';
+import { PreferenceSelect } from '@/components/game/preference-select';
 import {
   ANIMAL_IDS,
   ACTIVITY_COUNTS,
@@ -449,17 +449,18 @@ export default function Home() {
           <span className="topbar-name">{t.untilTomorrow}</span>
         )}
         <div className="topbar-controls">
-          <NativeSelect
+          <PreferenceSelect
             className="language-select"
             aria-label={t.language}
             value={language}
-            onChange={(e) =>
-              changePreference('language', e.target.value as Language)
+            onValueChange={(value) =>
+              changePreference('language', value as Language)
             }
-          >
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-          </NativeSelect>
+            options={[
+              { value: 'es', label: 'ES' },
+              { value: 'en', label: 'EN' },
+            ]}
+          />
           <button
             className="icon-button sound-button"
             aria-label={preferences.sound ? t.soundOff : t.soundOn}
@@ -680,16 +681,18 @@ export default function Home() {
           </DialogDescription>
           <div className="setting-row">
             <label htmlFor="language-setting">{t.language}</label>
-            <NativeSelect
+            <PreferenceSelect
               id="language-setting"
+              aria-label={t.language}
               value={language}
-              onChange={(e) =>
-                changePreference('language', e.target.value as Language)
+              onValueChange={(value) =>
+                changePreference('language', value as Language)
               }
-            >
-              <option value="es">Español</option>
-              <option value="en">English</option>
-            </NativeSelect>
+              options={[
+                { value: 'es', label: 'Español' },
+                { value: 'en', label: 'English' },
+              ]}
+            />
           </div>
           {(['sound', 'voice', 'motion'] as const).map((key) => (
             <div className="setting-row" key={key}>
@@ -740,19 +743,21 @@ export default function Home() {
           </fieldset>
           <div className="setting-row">
             <label htmlFor="pace-setting">{t.voiceSpeed}</label>
-            <NativeSelect
+            <PreferenceSelect
               id="pace-setting"
+              aria-label={t.voiceSpeed}
               value={preferences.voiceSpeed}
-              onChange={(e) =>
+              onValueChange={(value) =>
                 changePreference(
                   'voiceSpeed',
-                  e.target.value as Preferences['voiceSpeed'],
+                  value as Preferences['voiceSpeed'],
                 )
               }
-            >
-              <option value="calm">{t.calm}</option>
-              <option value="normal">{t.normal}</option>
-            </NativeSelect>
+              options={[
+                { value: 'calm', label: t.calm },
+                { value: 'normal', label: t.normal },
+              ]}
+            />
           </div>
           <button
             className="install-button"

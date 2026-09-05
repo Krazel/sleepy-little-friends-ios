@@ -9,5 +9,5 @@ export default defineConfig({
   resolve: { alias: { '@': fileURLToPath(new URL('.', import.meta.url)) } },
   css: { postcss: { plugins: [tailwindcss()] } },
   plugins: [react()],
-  build: { outDir: '../dist/native', emptyOutDir: true, target: 'safari15' },
+  build: { outDir: '../dist/native', emptyOutDir: true, target: 'safari16.4' },
 });

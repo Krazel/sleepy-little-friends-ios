@@ -1724,3 +1724,23 @@ h1 em {
   background: #e2eee4;
   border-color: #56766b;
 }
+
+.ios-preference-select {
+  min-height: 44px;
+}
+.language-select .ios-preference-select {
+  width: 64px;
+  border-radius: 18px;
+  background: #fffaf0;
+  font-weight: 700;
+  padding-left: 12px;
+}
+.ios-preference-menu {
+  border-radius: 16px;
+  padding: 4px;
+}
+.ios-preference-option {
+  min-height: 44px;
+  padding-left: 12px;
+  font-size: 16px;
+}
