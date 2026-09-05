@@ -1,31 +1,38 @@
-# Animalitos a dormir
+# Animalitos a dormir / Sleepy little friends
 
-Juego completo para móvil y navegador, para acompañar a peques de 2–5 años.
+Juego web instalable para móvil, pensado para jugar con peques de 2 a 5 años. Seis amigos, 36 actividades y narración en español e inglés.
 
 ## Jugar
 
-- Luna: toca o arrastra la manta hacia la conejita y dale un besito.
-- Milo: acerca el cojín al gatito y toca su lámpara de estrella.
-- Nube: dale el peluche y toca la nota musical para cantarle una nana.
-- Al terminar cada habitación, la flecha permite seguir. La noche acaba cuando los tres duermen.
-- El botón de sonido silencia toda la experiencia. «Para mayores» permite cambiar pistas habladas, movimiento y empezar otra noche.
-- El progreso se conserva solo en este navegador. No hay anuncios, compras, cuentas de juego ni analítica.
+- Luna, la conejita: caricias, burbujas, cepillo, manta, beso y luz.
+- Milo, el gatito: juguetes, baño, estrellas, cojín, música y luz.
+- Nube / Cloud, el osito: burbujas, fruta, cepillo, peluche, cuento y nana.
+- Coco, el perrito: pelota, baño, cepillo, manta, beso y luz.
+- Pipa / Pippa, la zorrita: juguetes, estrellas, cuento, dinosaurio, caricias y nana.
+- Bambú / Bamboo, el panda: fruta, baño, estrellas, cojín, beso y luz.
+
+Toca o arrastra los objetos, desliza para acariciar o limpiar y descubre la luna y la lámpara de cada habitación. Los gestos de arrastre tienen alternativa mediante toque o teclado. Tras completar las seis actividades, la flecha conduce al siguiente amigo; el juego termina cuando todos duermen.
+
+ES/EN cambia textos, nombres, instrucciones y narración. «Para mayores» incluye velocidad de voz, sonido, narración, movimiento, repetición de una habitación y nueva noche. El progreso se guarda entre actividades e incluso entre pequeñas acciones. Las partidas de la primera versión conservan los amigos que ya estaban durmiendo.
+
+No hay anuncios, compras, cuentas de juego, cronómetros ni analítica.
+
+## Voz y modo sin conexión
+
+68 MP3 incluidos: 34 frases por idioma. Voces es-ES-ElviraNeural y en-US-JennyNeural, generadas a partir de un guion fijo. La app reproduce los archivos localmente, atenúa la música mientras se narra y cancela la voz al cambiar de idioma, silenciar o salir. La síntesis del navegador solo sirve de alternativa si falla un archivo. No se envían datos del jugador a servicios de voz.
+
+El guion y la procedencia están en docs/voice-script.json y docs/voice-manifest.json. scripts/generate-voice.py permite regenerar las frases con edge-tts; requiere instalar esa dependencia por separado. Referencia del generador: https://github.com/rany2/edge-tts
+
+Abrir la URL con conexión y esperar al aviso de disponibilidad sin conexión en «Para mayores». El service worker guarda habitaciones, aplicación y las dos bibliotecas de voz. Desde el menú del navegador se puede añadir a la pantalla de inicio. La primera visita a Sites privado requiere la cuenta autorizada.
+
+La entrega es una aplicación web instalable. La instalación y la reproducción de audio siguen las capacidades del navegador; los controles visuales funcionan aunque no estén disponibles.
 
 ## Desarrollo
 
-Node 22.13+ y npm. Instalar con npm ci. npm run dev abre la versión de desarrollo. npm run build produce una exportación estática en dist/client con service worker. npm test valida lógica, persistencia, gestos y recursos; npm run typecheck valida TypeScript.
+Node 22.13+ y npm. `npm ci`, `npm run dev`. `npm run build` exporta a dist/client y genera la caché offline. `npm test`, `npm run typecheck`, `npm run lint` y `npm run verify:build` validan lógica, voces, recursos y exportación.
 
-## Móvil y sin conexión
+## Arte y verificación
 
-Abrir la URL desplegada una primera vez con conexión y esperar a que carguen las habitaciones. Desde el menú del navegador, añadir a la pantalla de inicio. El service worker guarda la app y sus recursos. La primera visita a un despliegue privado de Sites requiere la cuenta autorizada. Las voces dependen del soporte de síntesis del dispositivo; los sonidos y la nana se generan localmente con Web Audio. Si el navegador no permite audio, voz, almacenamiento o instalación, el juego sigue funcionando mediante sus controles visuales.
+Seis atlas originales generados con imagegen. Los PNG originales se recortan visualmente mediante CSS. Los props de Coco y Bambú usan máscaras adicionales porque esos dos PNG contienen fondo opaco fuera del objeto. Véanse los manifiestos y prompts en docs.
 
-La entrega es una aplicación web instalable, no un binario de App Store ni Google Play.
-
-## Arte
-
-Tres sprites originales generados con imagegen. Las imágenes contienen la habitación y un objeto independiente con transparencia. El componente Sprite recorta de forma visual con CSS sin alterar los PNG originales. Véanse docs/art-manifest.json y docs/art-prompts.txt.
-
-## Pruebas
-
-Pruebas automatizadas sin navegador: partida completa, recorridos en distinto orden, eventos repetidos y atrasados, recuperación de almacenamiento, límites de arrastre, recursos y caché offline. La compilación estática valida las rutas. No se ha realizado QA visual interactiva en navegadores ni en dispositivos físicos.
-
+Pruebas de lógica, persistencia, gestos, audio y service worker sin navegador. No se ha realizado QA visual interactiva ni pruebas en un teléfono físico. La interfaz WebMCP es opcional y no se ha validado en un navegador compatible. Más detalle en docs/verification.md.

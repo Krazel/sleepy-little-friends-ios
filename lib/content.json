@@ -1,0 +1,383 @@
+{
+  "ui": {
+    "es": {
+      "titleTop": "Animalitos",
+      "titleBottom": "a dormir",
+      "brand": "Buenas noches",
+      "welcome": "Seis amiguitos, un mundo de mimos.",
+      "allDreaming": "Todos sueñan contigo.",
+      "start": "Vamos a jugar",
+      "continue": "Seguimos",
+      "loading": "Preparando sus habitaciones…",
+      "ending": "Buenas noches",
+      "untilTomorrow": "Hasta mañana",
+      "endingText": "Ya están todos dormiditos. Ahora toca descansar.",
+      "home": "Sus habitaciones",
+      "visit": "Visitar a",
+      "roomOf": "La habitación de",
+      "sleeping": "durmiendo",
+      "sweetDreams": "Dulces sueños",
+      "hint": "Escuchar la pista",
+      "soundOn": "Activar el sonido",
+      "soundOff": "Silenciar el juego",
+      "parents": "Para mayores",
+      "parentTitle": "Un ratito juntos",
+      "parentDescription": "Tocad, arrastrad y descubrid a su ritmo. Cada amigo tiene seis pequeñas actividades y muchos rincones para explorar.",
+      "sound": "Sonidos suaves",
+      "soundDetail": "Burbujas, notas y nanas",
+      "voice": "Narración",
+      "voiceDetail": "Una voz suave preparada en español e inglés",
+      "motion": "Animaciones suaves",
+      "motionDetail": "Pequeños movimientos y corazones",
+      "systemMotion": "El dispositivo prefiere reducir el movimiento.",
+      "language": "Idioma",
+      "voiceSpeed": "Ritmo de la voz",
+      "calm": "Tranquilo",
+      "normal": "Normal",
+      "previewVoice": "Escuchar la voz",
+      "privacy": "Sin anuncios ni compras. La partida se guarda solo en este dispositivo.",
+      "storageIssue": "El navegador no permite guardar. Puedes seguir jugando.",
+      "install": "Instalar el juego",
+      "installHelp": "En el menú del navegador, elige «Añadir a pantalla de inicio».",
+      "offlineReady": "El juego y las voces están preparados para usarse sin conexión.",
+      "offlineWait": "Ábrelo con conexión para guardar las habitaciones y las voces.",
+      "reset": "Preparar otra noche",
+      "close": "Cerrar opciones",
+      "retry": "Volver a intentar",
+      "loadError": "No pudimos abrir las habitaciones.",
+      "footnote": "A su ritmo, con cariño.",
+      "welcomeFoot": "Un mimo, una sorpresa y a soñar.",
+      "step": "Actividad",
+      "of": "de",
+      "done": "Listo",
+      "nextPage": "Pasar la página",
+      "finishStory": "Fin del cuento",
+      "pet": "Acariciar",
+      "exploreMoon": "Saludar a la luna",
+      "exploreLamp": "Tocar la lámpara",
+      "exploreFriend": "Hacer cosquillas",
+      "restartRoom": "Volver a jugar en esta habitación",
+      "shh": "Shhh…",
+      "collection": "Nuestros amigos",
+      "toyBasket": "Cesta de juguetes"
+    },
+    "en": {
+      "titleTop": "Sleepy",
+      "titleBottom": "little friends",
+      "brand": "Good night",
+      "welcome": "Six little friends, a world of cuddles.",
+      "allDreaming": "Everyone is dreaming.",
+      "start": "Let's play",
+      "continue": "Keep going",
+      "loading": "Getting their rooms ready…",
+      "ending": "Good night",
+      "untilTomorrow": "See you tomorrow",
+      "endingText": "All our friends are fast asleep. Time to rest now.",
+      "home": "Their rooms",
+      "visit": "Visit",
+      "roomOf": "The room of",
+      "sleeping": "asleep",
+      "sweetDreams": "Sweet dreams",
+      "hint": "Hear a hint",
+      "soundOn": "Turn sound on",
+      "soundOff": "Mute the game",
+      "parents": "Grown-ups",
+      "parentTitle": "A little time together",
+      "parentDescription": "Tap, drag and discover at their own pace. Each friend has six little activities and a room full of things to explore.",
+      "sound": "Gentle sounds",
+      "soundDetail": "Bubbles, little notes and lullabies",
+      "voice": "Narration",
+      "voiceDetail": "A gentle voice prepared in Spanish and English",
+      "motion": "Gentle animations",
+      "motionDetail": "Little movements and hearts",
+      "systemMotion": "Your device prefers reduced motion.",
+      "language": "Language",
+      "voiceSpeed": "Voice pace",
+      "calm": "Calm",
+      "normal": "Normal",
+      "previewVoice": "Hear the voice",
+      "privacy": "No ads or purchases. Progress stays on this device only.",
+      "storageIssue": "This browser cannot save progress. You can still play.",
+      "install": "Install the game",
+      "installHelp": "Choose “Add to Home Screen” in your browser menu.",
+      "offlineReady": "The game and voices are ready to play offline.",
+      "offlineWait": "Open with a connection to save the rooms and voices.",
+      "reset": "Start a new night",
+      "close": "Close settings",
+      "retry": "Try again",
+      "loadError": "We couldn't open the rooms.",
+      "footnote": "At their pace, with love.",
+      "welcomeFoot": "A cuddle, a surprise, and sweet dreams.",
+      "step": "Activity",
+      "of": "of",
+      "done": "All done",
+      "nextPage": "Turn the page",
+      "finishStory": "The end",
+      "pet": "Give a cuddle",
+      "exploreMoon": "Say hello to the moon",
+      "exploreLamp": "Tap the lamp",
+      "exploreFriend": "Tickle our friend",
+      "restartRoom": "Play in this room again",
+      "shh": "Shhh…",
+      "collection": "Our little friends",
+      "toyBasket": "Toy basket"
+    }
+  },
+  "activities": {
+    "pet": {
+      "icon": "heart",
+      "es": "Desliza el dedo para darle unas caricias.",
+      "en": "Stroke your little friend with your finger.",
+      "title": {
+        "es": "Unas caricias",
+        "en": "A little cuddle"
+      }
+    },
+    "bubbles": {
+      "icon": "bubbles",
+      "es": "¡Cuántas burbujas! Tócalas para hacer pop.",
+      "en": "So many bubbles! Tap them to make them pop.",
+      "title": {
+        "es": "Burbujitas",
+        "en": "Bubble time"
+      }
+    },
+    "brush": {
+      "icon": "brush",
+      "es": "Pasa el cepillo suavemente por su pelito.",
+      "en": "Gently brush your little friend's fluffy fur.",
+      "title": {
+        "es": "A peinarse",
+        "en": "Brush time"
+      }
+    },
+    "wash": {
+      "icon": "water",
+      "es": "Limpia las manchitas con el dedito.",
+      "en": "Wipe the little smudges away with your finger.",
+      "title": {
+        "es": "Bien limpito",
+        "en": "All clean"
+      }
+    },
+    "tidy": {
+      "icon": "basket",
+      "es": "Guarda los tres juguetes en la cesta.",
+      "en": "Put the three little toys in the basket.",
+      "title": {
+        "es": "A recoger",
+        "en": "Tidy up"
+      }
+    },
+    "stars": {
+      "icon": "star",
+      "es": "Enciende las tres estrellitas de la ventana.",
+      "en": "Light up the three little stars by the window.",
+      "title": {
+        "es": "Mira las estrellas",
+        "en": "Little stars"
+      }
+    },
+    "snack": {
+      "icon": "carrot",
+      "es": "Acércale un poquito de fruta.",
+      "en": "Give your little friend a little fruit.",
+      "title": {
+        "es": "Una meriendita",
+        "en": "A little snack"
+      }
+    },
+    "ball": {
+      "icon": "ball",
+      "es": "Toca la pelota y mira cómo salta.",
+      "en": "Tap the ball and watch it bounce.",
+      "title": {
+        "es": "Una pelota saltarina",
+        "en": "Bouncy ball"
+      }
+    },
+    "prop": {
+      "icon": "gift",
+      "es": "Acércale su objeto favorito.",
+      "en": "Bring your little friend their favorite thing.",
+      "title": {
+        "es": "Su favorito",
+        "en": "Their favorite"
+      }
+    },
+    "kiss": {
+      "icon": "kiss",
+      "es": "Dale un besito de buenas noches.",
+      "en": "Give your little friend a goodnight kiss.",
+      "title": {
+        "es": "Un besito",
+        "en": "A goodnight kiss"
+      }
+    },
+    "lamp": {
+      "icon": "moon",
+      "es": "Apaga la luz para que pueda descansar.",
+      "en": "Turn off the light so your little friend can rest.",
+      "title": {
+        "es": "Apaga la luz",
+        "en": "Lights out"
+      }
+    },
+    "story": {
+      "icon": "book",
+      "es": "Vamos a leer un cuento. Toca para pasar la página.",
+      "en": "Let's read a little story. Tap to turn the page.",
+      "title": {
+        "es": "Un cuentecito",
+        "en": "Story time"
+      }
+    },
+    "song": {
+      "icon": "music",
+      "es": "Toca las cuatro notas para cantarle una nana.",
+      "en": "Tap the four notes to play a little lullaby.",
+      "title": {
+        "es": "Una nana",
+        "en": "A lullaby"
+      }
+    }
+  },
+  "lines": {
+    "welcome": {
+      "es": "Hola. Nuestros amiguitos tienen muchas ganas de jugar contigo.",
+      "en": "Hello. Our little friends can't wait to play with you."
+    },
+    "ending": {
+      "es": "Ya están todos dormiditos. Gracias por cuidarlos. Buenas noches.",
+      "en": "All our little friends are fast asleep. Thank you for taking care of them. Good night."
+    },
+    "praise": {
+      "es": "Qué bien. Vamos a descubrir algo más.",
+      "en": "Lovely. Let's discover something else."
+    },
+    "tickle": {
+      "es": "¡Qué cosquillas!",
+      "en": "That tickles!"
+    },
+    "moon": {
+      "es": "Hola, lunita. Qué bonita estás.",
+      "en": "Hello, little moon. You look lovely."
+    },
+    "lamp": {
+      "es": "Una lucecita muy suave.",
+      "en": "A lovely little light."
+    },
+    "story0": {
+      "es": "La lunita salió a pasear. Buscaba a sus amigos.",
+      "en": "The little moon went for a walk. She was looking for her friends."
+    },
+    "story1": {
+      "es": "Los encontró muy juntitos, compartiendo un abrazo.",
+      "en": "She found them all together, sharing a lovely cuddle."
+    },
+    "story2": {
+      "es": "Y les regaló un sueño bonito. Buenas noches, amiguitos.",
+      "en": "And she gave them a beautiful dream. Good night, little friends."
+    },
+    "prop_bunny": {
+      "es": "Ponle la mantita a Luna para que esté calentita.",
+      "en": "Tuck Luna in with her blanket to keep her warm."
+    },
+    "prop_kitten": {
+      "es": "Dale su cojín a Milo. Es tan blandito.",
+      "en": "Give Milo his pillow. It's so soft."
+    },
+    "prop_bear": {
+      "es": "Nube quiere abrazar a su peluche.",
+      "en": "Cloud would love to cuddle his toy bunny."
+    },
+    "prop_puppy": {
+      "es": "Arropa a Coco con su mantita.",
+      "en": "Tuck Coco in with his little blanket."
+    },
+    "prop_fox": {
+      "es": "Dale su dinosaurio de peluche a Pipa.",
+      "en": "Give Pippa her cuddly toy dinosaur."
+    },
+    "prop_panda": {
+      "es": "Acerca el cojín a Bambú.",
+      "en": "Bring Bamboo his cozy pillow."
+    },
+    "goodnight_bunny": {
+      "es": "Buenas noches, Luna. Qué calentita estás.",
+      "en": "Good night, Luna. You're so cozy."
+    },
+    "goodnight_kitten": {
+      "es": "Buenas noches, Milo. Dulces sueños.",
+      "en": "Good night, Milo. Sweet dreams."
+    },
+    "goodnight_bear": {
+      "es": "Buenas noches, Nube. Tu peluche está contigo.",
+      "en": "Good night, Cloud. Your little bunny is right beside you."
+    },
+    "goodnight_puppy": {
+      "es": "Buenas noches, Coco. Sueña con muchas aventuras.",
+      "en": "Good night, Coco. Dream of lovely adventures."
+    },
+    "goodnight_fox": {
+      "es": "Buenas noches, Pipa. Descansa con tu dinosaurio.",
+      "en": "Good night, Pippa. Snuggle up with your dinosaur."
+    },
+    "goodnight_panda": {
+      "es": "Buenas noches, Bambú. La luna cuida de ti.",
+      "en": "Good night, Bamboo. The moon is watching over you."
+    },
+    "activity_pet": {
+      "es": "Desliza el dedo para darle unas caricias.",
+      "en": "Stroke your little friend with your finger."
+    },
+    "activity_bubbles": {
+      "es": "¡Cuántas burbujas! Tócalas para hacer pop.",
+      "en": "So many bubbles! Tap them to make them pop."
+    },
+    "activity_brush": {
+      "es": "Pasa el cepillo suavemente por su pelito.",
+      "en": "Gently brush your little friend's fluffy fur."
+    },
+    "activity_wash": {
+      "es": "Limpia las manchitas con el dedito.",
+      "en": "Wipe the little smudges away with your finger."
+    },
+    "activity_tidy": {
+      "es": "Guarda los tres juguetes en la cesta.",
+      "en": "Put the three little toys in the basket."
+    },
+    "activity_stars": {
+      "es": "Enciende las tres estrellitas de la ventana.",
+      "en": "Light up the three little stars by the window."
+    },
+    "activity_snack": {
+      "es": "Acércale un poquito de fruta.",
+      "en": "Give your little friend a little fruit."
+    },
+    "activity_ball": {
+      "es": "Toca la pelota y mira cómo salta.",
+      "en": "Tap the ball and watch it bounce."
+    },
+    "activity_prop": {
+      "es": "Acércale su objeto favorito.",
+      "en": "Bring your little friend their favorite thing."
+    },
+    "activity_kiss": {
+      "es": "Dale un besito de buenas noches.",
+      "en": "Give your little friend a goodnight kiss."
+    },
+    "activity_lamp": {
+      "es": "Apaga la luz para que pueda descansar.",
+      "en": "Turn off the light so your little friend can rest."
+    },
+    "activity_story": {
+      "es": "Vamos a leer un cuento. Toca para pasar la página.",
+      "en": "Let's read a little story. Tap to turn the page."
+    },
+    "activity_song": {
+      "es": "Toca las cuatro notas para cantarle una nana.",
+      "en": "Tap the four notes to play a little lullaby."
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "generationMode": "built-in image_gen",
+  "generationCalls": 3,
+  "transparencyCorrectionEditCalls": 2,
+  "imageSize": {
+    "width": 1024,
+    "height": 1536
+  },
+  "notes": "Three final expansion files. Fox has valid alpha. Puppy and panda have opaque checkerboard backgrounds; one targeted imagegen alpha correction each failed and originals were retained. Use provided CSS prop clipping guidance for puppy/panda. Color bounds for opaque props were measured using R-B>30 below room. All normalized interactive positions refer to cropped room. Placement widths are relative to room width.",
+  "assets": [
+    {
+      "name": "Coco",
+      "species": "puppy",
+      "path": "C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/expansion/puppy-bedroom-sprites.png",
+      "alphaVerified": false,
+      "pixelFormat": "RGB",
+      "roomCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1118
+      },
+      "propColorBounds": {
+        "x": 174,
+        "y": 1169,
+        "width": 676,
+        "height": 288
+      },
+      "propCrop": {
+        "x": 174,
+        "y": 1169,
+        "width": 676,
+        "height": 288
+      },
+      "propClipPath": "polygon(7% 1%, 30% 2%, 50% 3%, 80% 1%, 94% 1%, 97% 4%, 99% 12%, 98% 24%, 97% 28%, 99% 78%, 100% 88%, 98% 96%, 95% 99%, 5% 99%, 2% 96%, 0% 90%, 1% 78%, 3% 28%, 2% 24%, 2% 15%, 3% 7%)",
+      "faceCenter": {
+        "x": 0.51,
+        "y": 0.548
+      },
+      "eyes": [
+        {
+          "x": 0.415,
+          "y": 0.55
+        },
+        {
+          "x": 0.602,
+          "y": 0.535
+        }
+      ],
+      "lampTarget": {
+        "x": 0.879,
+        "y": 0.436
+      },
+      "lampBounds": {
+        "left": 0.801,
+        "top": 0.33,
+        "right": 0.958,
+        "bottom": 0.548
+      },
+      "windowTarget": {
+        "x": 0.196,
+        "y": 0.176
+      },
+      "windowBounds": {
+        "left": 0.045,
+        "top": 0.04,
+        "right": 0.337,
+        "bottom": 0.32
+      },
+      "dragTarget": {
+        "x": 0.51,
+        "y": 0.804
+      },
+      "placedProp": {
+        "centerX": 0.51,
+        "centerY": 0.805,
+        "widthRelativeToRoom": 0.58
+      },
+      "notes": "Puppy face extends down to room y.681; blanket placed at center y.805 width.58 leaves face exposed."
+    },
+    {
+      "name": "Pipa",
+      "species": "fox",
+      "path": "C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/expansion/fox-bedroom-sprites.png",
+      "alphaVerified": true,
+      "pixelFormat": "RGBA",
+      "roomCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1107
+      },
+      "propAlphaBounds": {
+        "x": 352,
+        "y": 1122,
+        "width": 354,
+        "height": 395
+      },
+      "propCrop": {
+        "x": 345,
+        "y": 1115,
+        "width": 368,
+        "height": 409
+      },
+      "faceCenter": {
+        "x": 0.511,
+        "y": 0.52
+      },
+      "eyes": [
+        {
+          "x": 0.43,
+          "y": 0.53
+        },
+        {
+          "x": 0.597,
+          "y": 0.513
+        }
+      ],
+      "lampTarget": {
+        "x": 0.861,
+        "y": 0.456
+      },
+      "lampBounds": {
+        "left": 0.78,
+        "top": 0.36,
+        "right": 0.946,
+        "bottom": 0.555
+      },
+      "windowTarget": {
+        "x": 0.225,
+        "y": 0.196
+      },
+      "windowBounds": {
+        "left": 0.07,
+        "top": 0.047,
+        "right": 0.375,
+        "bottom": 0.355
+      },
+      "dragTarget": {
+        "x": 0.52,
+        "y": 0.755
+      },
+      "placedProp": {
+        "centerX": 0.52,
+        "centerY": 0.762,
+        "widthRelativeToRoom": 0.24
+      },
+      "notes": "Toy's highest spike will sit just below chin at recommended width. Arms remain visible."
+    },
+    {
+      "name": "Bambú",
+      "species": "panda",
+      "path": "C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/expansion/panda-bedroom-sprites.png",
+      "alphaVerified": false,
+      "pixelFormat": "RGB",
+      "roomCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1134
+      },
+      "propColorBounds": {
+        "x": 347,
+        "y": 1168,
+        "width": 326,
+        "height": 322
+      },
+      "propCrop": {
+        "x": 347,
+        "y": 1168,
+        "width": 326,
+        "height": 322
+      },
+      "propClipPath": "ellipse(49% 49% at 50% 50%)",
+      "faceCenter": {
+        "x": 0.505,
+        "y": 0.47
+      },
+      "eyes": [
+        {
+          "x": 0.421,
+          "y": 0.478
+        },
+        {
+          "x": 0.59,
+          "y": 0.467
+        }
+      ],
+      "lampTarget": {
+        "x": 0.888,
+        "y": 0.46
+      },
+      "lampBounds": {
+        "left": 0.803,
+        "top": 0.36,
+        "right": 0.972,
+        "bottom": 0.558
+      },
+      "windowTarget": {
+        "x": 0.217,
+        "y": 0.188
+      },
+      "windowBounds": {
+        "left": 0.076,
+        "top": 0.044,
+        "right": 0.354,
+        "bottom": 0.335
+      },
+      "dragTarget": {
+        "x": 0.515,
+        "y": 0.728
+      },
+      "placedProp": {
+        "centerX": 0.515,
+        "centerY": 0.727,
+        "widthRelativeToRoom": 0.265
+      },
+      "notes": "Round pillow placed below chin, between open arms. Apply ellipse clipping to exclude opaque checkerboard."
+    }
+  ]
+}

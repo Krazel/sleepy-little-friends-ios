@@ -1,0 +1,147 @@
+{
+  "voices": {
+    "es": "es-ES-ElviraNeural",
+    "en": "en-US-JennyNeural"
+  },
+  "rate": "-8%",
+  "provider": "Microsoft Edge neural text-to-speech, generated via edge-tts 7.2.8",
+  "clips": 68,
+  "lines": {
+    "welcome": {
+      "es": "Hola. Nuestros amiguitos tienen muchas ganas de jugar contigo.",
+      "en": "Hello. Our little friends can't wait to play with you."
+    },
+    "ending": {
+      "es": "Ya están todos dormiditos. Gracias por cuidarlos. Buenas noches.",
+      "en": "All our little friends are fast asleep. Thank you for taking care of them. Good night."
+    },
+    "praise": {
+      "es": "Qué bien. Vamos a descubrir algo más.",
+      "en": "Lovely. Let's discover something else."
+    },
+    "tickle": {
+      "es": "¡Qué cosquillas!",
+      "en": "That tickles!"
+    },
+    "moon": {
+      "es": "Hola, lunita. Qué bonita estás.",
+      "en": "Hello, little moon. You look lovely."
+    },
+    "lamp": {
+      "es": "Una lucecita muy suave.",
+      "en": "A lovely little light."
+    },
+    "story0": {
+      "es": "La lunita salió a pasear. Buscaba a sus amigos.",
+      "en": "The little moon went for a walk. She was looking for her friends."
+    },
+    "story1": {
+      "es": "Los encontró muy juntitos, compartiendo un abrazo.",
+      "en": "She found them all together, sharing a lovely cuddle."
+    },
+    "story2": {
+      "es": "Y les regaló un sueño bonito. Buenas noches, amiguitos.",
+      "en": "And she gave them a beautiful dream. Good night, little friends."
+    },
+    "prop_bunny": {
+      "es": "Ponle la mantita a Luna para que esté calentita.",
+      "en": "Tuck Luna in with her blanket to keep her warm."
+    },
+    "prop_kitten": {
+      "es": "Dale su cojín a Milo. Es tan blandito.",
+      "en": "Give Milo his pillow. It's so soft."
+    },
+    "prop_bear": {
+      "es": "Nube quiere abrazar a su peluche.",
+      "en": "Cloud would love to cuddle his toy bunny."
+    },
+    "prop_puppy": {
+      "es": "Arropa a Coco con su mantita.",
+      "en": "Tuck Coco in with his little blanket."
+    },
+    "prop_fox": {
+      "es": "Dale su dinosaurio de peluche a Pipa.",
+      "en": "Give Pippa her cuddly toy dinosaur."
+    },
+    "prop_panda": {
+      "es": "Acerca el cojín a Bambú.",
+      "en": "Bring Bamboo his cozy pillow."
+    },
+    "goodnight_bunny": {
+      "es": "Buenas noches, Luna. Qué calentita estás.",
+      "en": "Good night, Luna. You're so cozy."
+    },
+    "goodnight_kitten": {
+      "es": "Buenas noches, Milo. Dulces sueños.",
+      "en": "Good night, Milo. Sweet dreams."
+    },
+    "goodnight_bear": {
+      "es": "Buenas noches, Nube. Tu peluche está contigo.",
+      "en": "Good night, Cloud. Your little bunny is right beside you."
+    },
+    "goodnight_puppy": {
+      "es": "Buenas noches, Coco. Sueña con muchas aventuras.",
+      "en": "Good night, Coco. Dream of lovely adventures."
+    },
+    "goodnight_fox": {
+      "es": "Buenas noches, Pipa. Descansa con tu dinosaurio.",
+      "en": "Good night, Pippa. Snuggle up with your dinosaur."
+    },
+    "goodnight_panda": {
+      "es": "Buenas noches, Bambú. La luna cuida de ti.",
+      "en": "Good night, Bamboo. The moon is watching over you."
+    },
+    "activity_pet": {
+      "es": "Desliza el dedo para darle unas caricias.",
+      "en": "Stroke your little friend with your finger."
+    },
+    "activity_bubbles": {
+      "es": "¡Cuántas burbujas! Tócalas para hacer pop.",
+      "en": "So many bubbles! Tap them to make them pop."
+    },
+    "activity_brush": {
+      "es": "Pasa el cepillo suavemente por su pelito.",
+      "en": "Gently brush your little friend's fluffy fur."
+    },
+    "activity_wash": {
+      "es": "Limpia las manchitas con el dedito.",
+      "en": "Wipe the little smudges away with your finger."
+    },
+    "activity_tidy": {
+      "es": "Guarda los tres juguetes en la cesta.",
+      "en": "Put the three little toys in the basket."
+    },
+    "activity_stars": {
+      "es": "Enciende las tres estrellitas de la ventana.",
+      "en": "Light up the three little stars by the window."
+    },
+    "activity_snack": {
+      "es": "Acércale un poquito de fruta.",
+      "en": "Give your little friend a little fruit."
+    },
+    "activity_ball": {
+      "es": "Toca la pelota y mira cómo salta.",
+      "en": "Tap the ball and watch it bounce."
+    },
+    "activity_prop": {
+      "es": "Acércale su objeto favorito.",
+      "en": "Bring your little friend their favorite thing."
+    },
+    "activity_kiss": {
+      "es": "Dale un besito de buenas noches.",
+      "en": "Give your little friend a goodnight kiss."
+    },
+    "activity_lamp": {
+      "es": "Apaga la luz para que pueda descansar.",
+      "en": "Turn off the light so your little friend can rest."
+    },
+    "activity_story": {
+      "es": "Vamos a leer un cuento. Toca para pasar la página.",
+      "en": "Let's read a little story. Tap to turn the page."
+    },
+    "activity_song": {
+      "es": "Toca las cuatro notas para cantarle una nana.",
+      "en": "Tap the four notes to play a little lullaby."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+Mode: built-in image_gen. Three calls, one per requested expansion asset. Style reference: C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/bear-bedroom-sprites.png
+
+Asset: C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/expansion/puppy-bedroom-sprites.png
+Use case: illustration-story
+Asset type: production PNG sprite sheet for toddler bedtime game, 1024 x 1536 portrait.
+Input image: style reference only. Create an entirely NEW animal bedroom and separate prop, matching the reference's exceptionally cute baby-animal art, rounded pastel forms, warm cocoa outlines, softly painted children's storybook 2D shading and gentle texture. This is usable game art, not a mockup.
+Precise layout: TOP 73% (canvas y0 to y1120) is one complete cozy rectangular bedroom illustration spanning full width. Room ends with a straight horizontal edge. BOTTOM remaining 27% (canvas y1121 to y1535) is an actual ALPHA TRANSPARENT area with just one independent draggable prop, centered, not touching the room and with a generous transparent gap all around. No room scenery or opaque backdrop in bottom area. Preserve real transparent PNG alpha.
+Room composition: HUGE super cute centered baby animal, head centered roughly canvas x512 y490, whole seated body visible, feet roughly canvas y930. Eyes OPEN, large shiny friendly eyes, rosy cheeks and gentle happy smile. Calm simple furniture, one clearly visible moon window upper left and one clearly visible bedside lamp on right, no clutter. Original charming character matching supplied reference style. No text, no names rendered, no letters, no UI, no labels, no device frame, no watermark. Single room and SINGLE bottom prop only.
+
+New character Coco: adorable cream baby puppy with long floppy ears, tiny chocolate nose, large glossy cocoa eyes, wearing mint green pajamas. Sitting upright in simple cream-and-peach bed, arms gently open, torso and legs visible, absolutely NO blanket on body. Sky-blue room walls, moon window with soft lavender curtains upper left, small warm glowing lamp on right bedside table.
+Single independent bottom prop: one wide peach blanket with softly rounded corners and folded top edge, front facing shape to drag over puppy torso and legs while face stays visible. Only tiny pale cream star motifs. Blanket fully contained inside canvas x180 to844 and y1180 to1490. Real alpha transparent surrounding area.
+
+---
+
+Asset: C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/expansion/fox-bedroom-sprites.png
+Use case: illustration-story
+Asset type: production PNG sprite sheet for toddler bedtime game, 1024 x 1536 portrait.
+Input image: style reference only. Create an entirely NEW animal bedroom and separate prop, matching the reference's exceptionally cute baby-animal art, rounded pastel forms, warm cocoa outlines, softly painted children's storybook 2D shading and gentle texture. This is usable game art, not a mockup.
+Precise layout: TOP 73% (canvas y0 to y1120) is one complete cozy rectangular bedroom illustration spanning full width. Room ends with a straight horizontal edge. BOTTOM remaining 27% (canvas y1121 to y1535) is an actual ALPHA TRANSPARENT area with just one independent draggable prop, centered, not touching the room and with a generous transparent gap all around. No room scenery or opaque backdrop in bottom area. Preserve real transparent PNG alpha.
+Room composition: HUGE super cute centered baby animal, head centered roughly canvas x512 y490, whole seated body visible, feet roughly canvas y930. Eyes OPEN, large shiny friendly eyes, rosy cheeks and gentle happy smile. Calm simple furniture, one clearly visible moon window upper left and one clearly visible bedside lamp on right, no clutter. Original charming character matching supplied reference style. No text, no names rendered, no letters, no UI, no labels, no device frame, no watermark. Single room and SINGLE bottom prop only.
+
+New character Pipa: adorable round peach/orange baby fox with cream muzzle and cheeks, big rounded pointy ears, large glossy cocoa eyes, huge fluffy tail curved alongside cushion, wearing cream pajamas. Seated upright on a peach floor cushion with arms OPEN for a hug and EMPTY space in front of torso. Lavender and peach cozy room, moon window upper left, small simple bookshelf against wall and a small glowing lamp on right. NO toy in arms.
+Single independent bottom prop: one extremely cute mint green baby dinosaur plush toy with tiny rounded pale peach back spikes, round muzzle and belly, little arms, short thick tail, soft embroidered friendly eyes. Sitting front-three-quarter pose. Fully contained inside canvas x350 to674 and y1180 to1490 with clear transparency surrounding it. No other bottom objects.
+
+---
+
+Asset: C:/Users/dmkra/Documents/Codex Apps/AnimalitosArt/expansion/panda-bedroom-sprites.png
+Use case: illustration-story
+Asset type: production PNG sprite sheet for toddler bedtime game, 1024 x 1536 portrait.
+Input image: style reference only. Create an entirely NEW animal bedroom and separate prop, matching the reference's exceptionally cute baby-animal art, rounded pastel forms, warm cocoa outlines, softly painted children's storybook 2D shading and gentle texture. This is usable game art, not a mockup.
+Precise layout: TOP 73% (canvas y0 to y1120) is one complete cozy rectangular bedroom illustration spanning full width. Room ends with a straight horizontal edge. BOTTOM remaining 27% (canvas y1121 to y1535) is an actual ALPHA TRANSPARENT area with just one independent draggable prop, centered, not touching the room and with a generous transparent gap all around. No room scenery or opaque backdrop in bottom area. Preserve real transparent PNG alpha.
+Room composition: HUGE super cute centered baby animal, head centered roughly canvas x512 y490, whole seated body visible, feet roughly canvas y930. Eyes OPEN, large shiny friendly eyes, rosy cheeks and gentle happy smile. Calm simple furniture, one clearly visible moon window upper left and one clearly visible bedside lamp on right, no clutter. Original charming character matching supplied reference style. No text, no names rendered, no letters, no UI, no labels, no device frame, no watermark. Single room and SINGLE bottom prop only.
+
+New character Bambú: adorable extra round cream-and-soft-charcoal-black baby panda, round black ears and eye patches, large glossy friendly eyes, lavender pajamas. Seated upright in a pale cream bed with arms OPEN for a hug, body and feet visible, EMPTY space in front of torso, NO pillow or blanket over body. Pale mint and butter-yellow bedroom, moon window upper left and one small warm glowing bedside lamp on right.
+Single independent bottom prop: one ROUND plump peach cushion/pillow with a large pale cream five-point star motif centered on its face, soft rounded fabric edge. Front facing and fully contained inside canvas x340 to684 and y1180 to1490. Genuine alpha transparent background around pillow. No other bottom sprites.
