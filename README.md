@@ -36,3 +36,8 @@ Node 22.13+ y npm. `npm ci`, `npm run dev`. `npm run build` exporta a dist/clien
 Seis atlas originales generados con imagegen. Los PNG originales se recortan visualmente mediante CSS. Los props de Coco y Bambú usan máscaras adicionales porque esos dos PNG contienen fondo opaco fuera del objeto. Véanse los manifiestos y prompts en docs.
 
 Pruebas de lógica, persistencia, gestos, audio y service worker sin navegador. No se ha realizado QA visual interactiva ni pruebas en un teléfono físico. La interfaz WebMCP es opcional y no se ha validado en un navegador compatible. Más detalle en docs/verification.md.
+
+## iPhone y iPad
+
+Sleepy Little Friends: proyecto iOS en ios/App/App.xcodeproj. Preparación, pruebas y TestFlight en docs/ios.md.
+

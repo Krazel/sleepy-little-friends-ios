@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { Capacitor } from '@capacitor/core';
 import {
   Heart,
   House,
@@ -34,6 +35,7 @@ import {
   freshGame,
   reduceGame,
   restoreSaved,
+  deviceLanguage,
   serializeGame,
   type AnimalId,
   type GameAction,
@@ -128,17 +130,26 @@ export default function Home() {
   };
   useEffect(() => {
     audio.current = new BedtimeAudio();
+    const initialLanguage = deviceLanguage(
+      navigator.languages?.length ? navigator.languages : [navigator.language],
+    );
+    let raw: string | null = null;
     try {
-      const saved = restoreSaved(localStorage.getItem(STORAGE_KEY));
+      raw = localStorage.getItem(STORAGE_KEY);
+    } catch {
+      // oxlint-disable-next-line react/react-compiler -- Browser storage is only available after mount.
+      setStorageIssue(true);
+    }
+    {
+      const saved = restoreSaved(raw, initialLanguage);
       gameRef.current = saved.game;
       preferencesRef.current = saved.preferences;
       // oxlint-disable-next-line react/react-compiler -- Restore browser-only state after hydration.
       setGame(saved.game);
       setPreferences(saved.preferences);
       audio.current.configure(saved.preferences);
-    } catch {
-      setStorageIssue(true);
     }
+    if (Capacitor.isNativePlatform()) setOfflineReady(true);
     setHydrated(true);
     const media = window.matchMedia('(prefers-reduced-motion: reduce)'),
       change = () => setSystemReduced(media.matches);
@@ -156,7 +167,11 @@ export default function Home() {
     window.addEventListener('beforeinstallprompt', install);
     window.addEventListener('appinstalled', installed);
     let cancelled = false;
-    if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production')
+    if (
+      !Capacitor.isNativePlatform() &&
+      'serviceWorker' in navigator &&
+      process.env.NODE_ENV === 'production'
+    )
       navigator.serviceWorker
         .register('/sw.js', { updateViaCache: 'none' })
         .then(async (registration) => {
@@ -734,23 +749,24 @@ export default function Home() {
           <p className="privacy-note">
             {t.privacy} {storageIssue ? t.storageIssue : ''}
           </p>
-          {installPrompt ? (
-            <button
-              className="install-button"
-              onClick={async () => {
-                try {
-                  await installPrompt.prompt();
-                  await installPrompt.userChoice;
-                } catch {}
-                setInstallPrompt(null);
-              }}
-            >
-              <Download size={19} />
-              {t.install}
-            </button>
-          ) : (
-            <p className="install-note">{t.installHelp}</p>
-          )}
+          {!Capacitor.isNativePlatform() &&
+            (installPrompt ? (
+              <button
+                className="install-button"
+                onClick={async () => {
+                  try {
+                    await installPrompt.prompt();
+                    await installPrompt.userChoice;
+                  } catch {}
+                  setInstallPrompt(null);
+                }}
+              >
+                <Download size={19} />
+                {t.install}
+              </button>
+            ) : (
+              <p className="install-note">{t.installHelp}</p>
+            ))}
           <p className="install-note">
             {offlineReady ? t.offlineReady : t.offlineWait}
           </p>

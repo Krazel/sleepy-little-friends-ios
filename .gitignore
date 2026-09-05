@@ -37,3 +37,10 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
+
+/artifacts/
+*.p12
+*.p8
+*.mobileprovision
+*.key
+*.xcresult

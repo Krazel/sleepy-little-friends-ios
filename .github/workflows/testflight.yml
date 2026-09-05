@@ -1,0 +1,61 @@
+name: Sleepy Little Friends iOS TestFlight
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: sleepy-testflight
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.actor == github.repository_owner && github.ref == 'refs/heads/main' && !github.event.repository.private
+    runs-on: macos-26
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: npm ci
+      - run: npm run typecheck && npm test && npm run lint
+      - run: npm run sync:ios
+      - run: node scripts/verify-native.mjs
+      - name: iPhone interaction tests and iPad launch
+        run: node scripts/simulator-qa.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: SleepyLittleFriends-0.3-build1-native-QA
+          path: artifacts/
+          retention-days: 3
+  testflight:
+    needs: verify
+    runs-on: macos-26
+    environment: app-store-production
+    timeout-minutes: 35
+    env:
+      ANIMALITOS_DISTRIBUTION: testflight
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_PRIVATE_KEY_BASE64: ${{ secrets.ASC_PRIVATE_KEY_BASE64 }}
+      IOS_DISTRIBUTION_P12_BASE64: ${{ secrets.IOS_DISTRIBUTION_P12_BASE64 }}
+      IOS_DISTRIBUTION_P12_PASSWORD: ${{ secrets.IOS_DISTRIBUTION_P12_PASSWORD }}
+      IOS_APP_STORE_PROFILE_BASE64: ${{ secrets.IOS_APP_STORE_PROFILE_BASE64 }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: npm ci
+      - run: npm run sync:ios
+      - name: Archive, verify, sign and upload authorized TestFlight build
+        run: node scripts/build-testflight.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: SleepyLittleFriends-0.3-build1-TestFlight
+          path: artifacts/
+          if-no-files-found: ignore
+          retention-days: 3

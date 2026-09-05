@@ -1,0 +1,16 @@
+{
+  "name": "Sleepy Little Friends",
+  "primaryLocale": "es-ES",
+  "sku": "krazel-animalitos-ios",
+  "bundleId": "com.krazel.animalitosadormir",
+  "bundleResourceId": "B8S7Z58QGB",
+  "teamId": "B2X6D3A9J9",
+  "marketingVersion": "0.3",
+  "buildNumber": "1",
+  "purpose": "TestFlight",
+  "betaAudience": "internal",
+  "profileId": "G3D47HH98S",
+  "profileName": "Animalitos App Store 2026-09-05",
+  "profileUuid": "3b41b0cd-5ac3-4e76-b560-545c98a4d3a9",
+  "appId": "6809010193"
+}

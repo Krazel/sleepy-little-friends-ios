@@ -147,13 +147,23 @@ export function reduceGame(state: GameState, action: GameAction): GameState {
     }
   }
 }
-export function restoreSaved(raw: string | null): {
+export function deviceLanguage(locales: readonly string[]): Language {
+  for (const locale of locales) {
+    const language = locale.toLowerCase().split(/[-_]/)[0];
+    if (language === 'es' || language === 'en') return language;
+  }
+  return 'en';
+}
+export function restoreSaved(
+  raw: string | null,
+  language: Language = 'es',
+): {
   game: GameState;
   preferences: Preferences;
 } {
   const fallback = {
     game: freshGame(),
-    preferences: { ...DEFAULT_PREFERENCES },
+    preferences: { ...DEFAULT_PREFERENCES, language },
   };
   if (!raw) return fallback;
   try {
@@ -187,7 +197,7 @@ export function restoreSaved(raw: string | null): {
         ].slice(0, count - 1);
       }
     }
-    const preferences = { ...DEFAULT_PREFERENCES };
+    const preferences = { ...DEFAULT_PREFERENCES, language };
     for (const key of ['sound', 'voice', 'motion'] as const)
       if (typeof value.preferences?.[key] === 'boolean')
         preferences[key] = value.preferences[key];
