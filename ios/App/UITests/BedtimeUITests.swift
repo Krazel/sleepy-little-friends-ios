@@ -2,6 +2,9 @@ import XCTest
 
 final class BedtimeUITests: XCTestCase {
     private func changeLanguage(_ app: XCUIApplication, label: String, option: String, visit: String) {
+        // The home screen scrolls on small iPhones. Bring its header below
+        // the status bar before interacting with the language picker.
+        app.swipeDown()
         let trigger = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", label)).firstMatch
         XCTAssertTrue(trigger.waitForExistence(timeout: 10), app.debugDescription)
         trigger.tap()
