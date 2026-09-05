@@ -30,15 +30,23 @@ final class BedtimeUITests: XCTestCase {
         app.buttons["Sus habitaciones"].tap()
         app.buttons["Para mayores"].tap()
         XCTAssertTrue(app.buttons["Escuchar la voz"].waitForExistence(timeout: 10))
+        // WKWebView exposes clipped dialog controls as hittable. Scroll the
+        // panel itself before tapping controls below its visible lower edge.
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.80))
+            .press(forDuration: 0.1, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.40)))
         let original = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Voz anterior · Sarah")).firstMatch
         XCTAssertTrue(original.waitForExistence(timeout: 10), app.debugDescription)
         original.tap()
+        XCTAssertTrue(app.links["Voz de IA: Sarah · ElevenLabs (elevenlabs.io)"].waitForExistence(timeout: 5), app.debugDescription)
         app.buttons["Escuchar la voz"].tap()
         let spain = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "España · Valeria")).firstMatch
         XCTAssertTrue(spain.exists, app.debugDescription)
         spain.tap()
+        XCTAssertTrue(app.links["Voz de IA: Valeria · ElevenLabs (elevenlabs.io)"].waitForExistence(timeout: 5), app.debugDescription)
         app.buttons["Escuchar la voz"].tap()
         capture(app, "iPhone-voice-options")
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.35))
+            .press(forDuration: 0.1, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.80)))
         app.buttons["Cerrar opciones"].tap()
         changeLanguage(app, label: "Idioma", option: "EN", visit: "Visit Luna")
         capture(app, "iPhone-home-en")
