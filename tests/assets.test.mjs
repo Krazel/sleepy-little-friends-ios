@@ -37,12 +37,12 @@ await test('all instructions, stories and names have prepared MP3 voices in both
   for (const language of ['es', 'en']) {
     for (const text of Object.values(content.ui[language]))
       assert.ok(text.trim().length > 0);
-    const files = await readdir('public/voice/' + language);
+    const files = await readdir('public/voice/elevenlabs/' + language);
     assert.equal(files.length, 34);
     for (const [key, line] of Object.entries(content.lines)) {
       assert.ok(line[language].length > 0);
       const bytes = await readFile(
-        'public/voice/' + language + '/' + key + '.mp3',
+        'public/voice/elevenlabs/' + language + '/' + key + '.mp3',
       );
       assert.ok(bytes.length > 1000);
       assert.ok(
@@ -78,7 +78,7 @@ await test('all shipped narration belongs to the same ElevenLabs generation', as
   const { createHash } = await import('node:crypto');
   for (const entry of manifest.files) {
     const bytes = await readFile(
-      'public/voice/' + entry.language + '/' + entry.key + '.mp3',
+      'public/voice/elevenlabs/' + entry.language + '/' + entry.key + '.mp3',
     );
     assert.equal(
       createHash('sha256').update(bytes).digest('hex'),

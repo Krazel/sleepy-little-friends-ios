@@ -23,10 +23,14 @@ El juego reproduce los archivos incluidos y sigue funcionando sin conexión tras
 - Ejecutar scripts/generate-elevenlabs-voice.py para consultar cuota sin generar audio.
 - Añadir --generate para preparar el lote en work/elevenlabs-voice.
 - El script valida la cuota conservadoramente, reutiliza archivos con su huella y no reintenta automáticamente fallos de red de resultado incierto.
-- Validar los audios y su manifiesto antes de sustituir public/voice y publicar.
+- Validar los audios y su manifiesto antes de sustituir public/voice/elevenlabs y publicar.
 
 Documentación: https://elevenlabs.io/docs/api-reference/text-to-speech/convert
 Cuota: https://elevenlabs.io/docs/api-reference/user/subscription/get
 Condiciones: https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform
 
 Tarea responsable del producto: 01a06ecc-71e2-77c1-a108-08f629f41bea. Plataforma acordada: web móvil/PWA, ES y EN; esta mejora no implica migración nativa.
+
+## Caché de actualizaciones
+
+Los archivos actuales viven bajo /voice/elevenlabs/es y /voice/elevenlabs/en. Este espacio de rutas distingue las voces nuevas de los MP3 Microsoft de versiones anteriores; un service worker antiguo no puede devolver sus audios al cargar la nueva versión.

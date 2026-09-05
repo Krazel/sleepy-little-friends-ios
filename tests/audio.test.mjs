@@ -123,7 +123,7 @@ await test('prepared voice plays, music ducks, cached clips are reused and pace 
     audio.speak('Hola', 'welcome', 'es', 0);
     await wait();
     assert.equal(stats.sources[1].playbackRate.value, 1.08);
-    assert.deepEqual(stats.fetched, ['/voice/es/welcome.mp3']);
+    assert.deepEqual(stats.fetched, ['/voice/elevenlabs/es/welcome.mp3']);
   } finally {
     audio.dispose();
     cleanup();
@@ -138,7 +138,7 @@ await test('language change cancels stale voice, and uses English clips', async 
     audio.configure({ ...DEFAULT_PREFERENCES, language: 'en' });
     audio.speak('Hello', 'welcome', 'en', 0);
     await wait();
-    assert.deepEqual(stats.fetched, ['/voice/en/welcome.mp3']);
+    assert.deepEqual(stats.fetched, ['/voice/elevenlabs/en/welcome.mp3']);
     assert.equal(stats.sources.length, 1);
   } finally {
     audio.dispose();

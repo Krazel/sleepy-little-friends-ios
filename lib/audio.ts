@@ -112,7 +112,7 @@ export class BedtimeAudio {
     let promise = this.buffers.get(id);
     if (!promise) {
       promise = (async () => {
-        const response = await fetch('/voice/' + id + '.mp3');
+        const response = await fetch('/voice/elevenlabs/' + id + '.mp3');
         if (!response.ok) throw new Error('Voice unavailable');
         const bytes = await response.arrayBuffer();
         if (!this.context) throw new Error('Audio not ready');

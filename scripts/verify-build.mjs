@@ -20,8 +20,8 @@ for (const name of [
   '/art/puppy.png',
   '/art/fox.png',
   '/art/panda.png',
-  '/voice/es/welcome.mp3',
-  '/voice/en/welcome.mp3',
+  '/voice/elevenlabs/es/welcome.mp3',
+  '/voice/elevenlabs/en/welcome.mp3',
   '/index.html',
   '/manifest.webmanifest',
   '/icon-192.png',
@@ -119,12 +119,15 @@ assert.equal(await art.text(), 'cached:/art/bunny.png');
 for (const lang of ['es', 'en']) {
   const voice = await fire('fetch', {
     request: {
-      url: 'https://test.local/voice/' + lang + '/welcome.mp3',
+      url: 'https://test.local/voice/elevenlabs/' + lang + '/welcome.mp3',
       method: 'GET',
       mode: 'cors',
     },
   });
-  assert.equal(await voice.text(), 'cached:/voice/' + lang + '/welcome.mp3');
+  assert.equal(
+    await voice.text(),
+    'cached:/voice/elevenlabs/' + lang + '/welcome.mp3',
+  );
 }
 let intercepted = false;
 listeners.fetch({
